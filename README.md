@@ -1,2 +1,2 @@
-# debate-note
-My English Debate note for English Debate Club
+# Welcome!
+Here's is where I save my markdown notes.
