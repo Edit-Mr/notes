@@ -18,7 +18,7 @@ We see the world more clearly when we see it for the first time. Before a lifeti
 
 Always feet shoulder-width apart. Hands above waist, or clenched and drooping naturally
 
-<img src="file:///C:/Users/VTEI/AppData/Roaming/marktext/images/2022-10-17-20-01-35-image.png" title="" alt="" width="151"><img src="file:///C:/Users/VTEI/AppData/Roaming/marktext/images/2022-10-17-20-14-53-image.png" title="" alt="" width="102">
+<img src="2022-10-17-20-01-35-image.png" title="" alt="" width="151"><img src="file:///C:/Users/VTEI/AppData/Roaming/marktext/images/2022-10-17-20-14-53-image.png" title="" alt="" width="102">
 
 Often putting a hand up. Like squeezing something. To highlight, or to show a pause.
 
