@@ -14,7 +14,7 @@ We see the world more clearly when we see it for the first time. Before a lifeti
 
 ### Normal
 
-<img src="file:///C:/Users/VTEI/AppData/Roaming/marktext/images/2022-10-17-19-56-17-image.png" title="" alt="" width="227"><img src="file:///C:/Users/VTEI/AppData/Roaming/marktext/images/2022-10-17-20-19-48-image.png" title="" alt="" width="66">
+<img src="2022-10-17-19-56-17-image.png" title="" alt="" width="227"><img src="2022-10-17-20-19-48-image.png" title="" alt="" width="66">
 
 Always feet shoulder-width apart. Hands above waist, or clenched and drooping naturally
 
