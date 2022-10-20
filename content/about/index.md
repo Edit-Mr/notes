@@ -21,7 +21,7 @@ dropCap = false
 ![](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Edit-Mr&theme=radical&layout=compact&exclude_lang=java+r)
 
 #### EM\-Tec
-![](height="180em" src="https://github-readme-stats.vercel.app/api?username=EM-Tec&show_icons=true&theme=radical)
+![](https://github-readme-stats.vercel.app/api?username=EM-Tec&show_icons=true&theme=radical)
 ![](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=EM-Tec&theme=radical&layout=compact&exclude_lang=java+r)
 
 ## 聯絡資訊 Contact
