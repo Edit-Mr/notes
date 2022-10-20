@@ -2,7 +2,7 @@
 title: "Aether: A Clean Theme for Hugo"
 date: 2018-05-02T14:33:42-04:00
 description: " Aether is new theme for Hugo that emphasizes motion, material, and depth as design elements. Distracting styling and page elements are forgone to focus on the content."
-categories: ["Web"]
+categories: ["Hugo"]
 dropCap: true
 displayInMenu: false
 displayInList: true
@@ -19,9 +19,10 @@ Today's web is a frustrating mess of pop-ups, intrusive banners, and ads obstruc
 Aether is a Hugo theme for blogs that elevates good writing and photography. If you use Hugo for your blog, give aether a try.
 
 ## Installation
+
 In the root directory of your Hugo Project, clone the aether repo into the themes directory.
 
-```shell session
+```shell
 git clone https://github.com/josephhutch/aether.git themes/aether
 ```
 
@@ -75,6 +76,7 @@ The default syntax highlighter `style` does not look great with aether so I reco
 That is the only configuration required at the site level! You can now begin writing content for your site.
 
 ### Creating content
+
 Make a new blog post by executing `hugo new posts/postnamehere/index.md` in your shell. At the top of the new markdown file, is what's called the front matter. The front matter is the page's metadata that determines how Hugo and aether generate the HTML for your post. Below you can find what the front matter should contain for a new post and what each of the parameters mean.
 
 ```yaml
@@ -111,6 +113,7 @@ Aether takes advantage of [page bundles](https://gohugo.io/content-management/pa
 Posts are written in markdown. You can find how to write in markdown from this [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ### Further Customization
+
 To change the heading and subtext at the top of list pages just add a \_index.md file in the folder that the list page is generated from. For example to change the heading at the top of the homepage, add an \_index.md file to the content folder with the following parameters.
 
 ```properties

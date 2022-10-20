@@ -2,7 +2,7 @@
 title: "Aether Features"
 date: 2018-12-19T10:35:35-05:00
 description: "Hugo combined with the Aether theme turns easy to write markdown into powerful web pages.  KaTeX, Highlight.js, and Hugo provides the ability to create mathmatical symobols, equations, highlighted code, tables, lists, and much more."
-categories: ["Features"]
+categories: ["Hugo"]
 dropCap: true
 displayInMenu: false
 displayInList: true
@@ -32,12 +32,12 @@ For each feature below, the first line is the markdown and the second line is th
 
 ## Code (Supports many programming languages and formats)
 
-````md
+```md
 ```javascript
 var s = "JavaScript syntax highlighting";
 alert(s);
 ```
-````
+```
 
 ```javascript
 var s = "JavaScript syntax highlighting";
@@ -52,7 +52,7 @@ Here is `var s = "Hello World"` inline code
 
 Here is `var s = "Hello World"` inline code
 
-## Tables 
+## Tables
 
 ```md
 | Tables        | Are           | Cool  |
@@ -65,8 +65,8 @@ Here is `var s = "Hello World"` inline code
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| col 2 is      | centered      | $12   |
+| zebra stripes | are neat      | $1    |
 
 ## Ordered List
 
@@ -79,8 +79,8 @@ Here is `var s = "Hello World"` inline code
 
 1. Number one
 2. Number Two
-    1. Indented Number 1
-    2. Indented Number 2
+   1. Indented Number 1
+   2. Indented Number 2
 
 ## Unordered List
 
@@ -96,11 +96,11 @@ Here is `var s = "Hello World"` inline code
 
 * Get groceries at Harris Teeter before the party
 * Get a Spider Man cake
-    * Chocolate or marble
-    * Whipped cream frosting
+  * Chocolate or marble
+  * Whipped cream frosting
 * Don't forget to walk the dog before you leave
 * Bring lots of plates and silverware so that we don't run out
-    * Plastic Dixie brand is fine
+  * Plastic Dixie brand is fine
 
 ## Comments
 

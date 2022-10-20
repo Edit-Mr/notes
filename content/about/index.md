@@ -1,20 +1,29 @@
 +++
-title = "About Hugo"
+title = "關於 About"
 date = "2014-04-09"
 displayInMenu = true
 displayInList = false
 dropCap = false
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
+## 關於我
 
-It makes use of a variety of open source projects including:
+哈囉，我是毛哥EM，一位數位創作者。 我喜歡用科技來表達自己，進行各種各樣的創作，比如繪畫、音樂、平面設計和網頁設計。 除了自己做，我也很喜歡與其他創作者合作或著開放委託。
 
-* https://github.com/russross/blackfriday
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+## 我的Github狀態
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+我有兩個GitHub帳戶，這樣我可以將我的部落個網站和其他網頁作品分開來放。
 
+### Edit Mr
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Edit-Mr&show_icons=true&theme=radical" />
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=Edit-Mr&theme=radical&layout=compact&exclude_lang=java+r" />
+
+#### EM\-Tec
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=EM-Tec&show_icons=true&theme=radical" />
+  <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=EM-Tec&theme=radical&layout=compact&exclude_lang=java+r" />
+
+## 聯絡資訊 Contact
+
+- Email: <lvismao.070512@gmail.com>
