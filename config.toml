@@ -1,0 +1,21 @@
+baseURL = "https://edit-mr.github.io/notes"
+languageCode = "en"
+title = "毛哥EM的筆記 EM's Notes"
+theme = "aether"
+googleAnalytics = "281251197"
+
+[params]
+  brand = "My notes for everyting"
+  description = "My notes for everyting"
+  # bgimg = "Path, within the 'assets' folder, of the image used for the page background - optional"
+  # headshotimg = "Path, within the 'assets' folder, of the image used for the home page header - optional"
+  headshotalt = "This is me"
+  rssinmenu = true
+  github = "https://github.com/Edit-Mr"
+  instagram = "https://www.instagram.com/elvisdragonmao/"
+  twitch = "https://twitch.tv/elvismao"
+  youtube = "https://www.youtube.com/channel/UCiXuSx3IuiYI87dHOhVxC6A"
+
+[markup]
+  [markup.highlight]
+    style = "igor"
