@@ -1,7 +1,7 @@
 ---
 
 title: "網頁設計課程大綱"
-date: 2012-10-27
+date: 2022-10-27
 description: "網頁設計課程大綱"
 categories: ["Coding"]
 dropCap: true
@@ -17,19 +17,24 @@ resources:
 
 ---
 
+要我講網頁設計大概就是講這些
+
+看不懂沒關係，聽我講就懂了
+
 ## 網頁原理
+
 
 ### 寄包裹
 
 - **網路連線**
-- **TCP/IP**：傳輸控制協定和網際網路協定（Transmission Control Protocol and Internet Protocol）車子、腳踏車
-- **DNS**：網域名稱系統（Domain Name Servers）就像是網站的電話簿。當你在瀏覽器輸入網址時，瀏覽器會在取得網站前，先去看 DNS 以查到網站的真實地址。瀏覽器需要找到哪個伺服器在託管指定的網站、這樣才能把 HTTP 訊息傳送到對的地方（可以參考下文）。這就像你在去商店前會先翻開電話簿，才好去商店一般。
-- **HTTP**超文本傳輸協定（Hypertext Transfer Protocol）是定義用戶端語言，和伺服器如何對話的應用[協議](https://developer.mozilla.org/zh-TW/docs/Glossary/Protocol)。可以想成你買東西時會用來溝通的語言。
-- **Component files**：網站由許多不同的文件組成，如同商店內許多不同的商品。這些檔案分為以下類型：
-  - **程式檔**：網站主要是由 HTML、CSS、JavaScript 建立，雖然你知會看到其他工具或技術。
-  - **Asset**：這是構成網站其他內容的集體名稱，裡面可能包含圖像、音樂、影片、Word、PDF……之類的。
+- **TCP/IP**（傳輸控制協定和網際網路協定 Transmission Control Protocol and Internet Protocol）：車子、腳踏車
+- **DNS**：電話簿
+- **HTTP**超文本傳輸協定（Hypertext Transfer Protocol）：交通規則
+- **Component files**：網站由許多不同的文件組成
+  - **程式檔**：HTML、CSS、JavaScript...
+  - **Asset**：附件
 
-## [所以我說到底發生了啥？](https://developer.mozilla.org/zh-TW/docs/Learn/Getting_started_with_the_web/How_the_Web_works#%E6%89%80%E4%BB%A5%E6%88%91%E8%AA%AA%E5%88%B0%E5%BA%95%E7%99%BC%E7%94%9F%E4%BA%86%E5%95%A5%EF%BC%9F "Permalink to 所以我說到底發生了啥？")
+#### 所以我說到底發生了啥？
 
 當你在瀏覽器輸入網址時（你可以想像說自己要走去商店時）：
 
@@ -84,7 +89,11 @@ Markdown不是要來取代HTML，甚至也沒有要和它相似，它的語法�
 
 ### JavaScript
 
+跟網站互動起來
+
 ### 認識Json
+
+一種很讚的物件儲存格式
 
 到這裡你就可以去一個月3 4萬找工作
 
@@ -92,4 +101,10 @@ Markdown不是要來取代HTML，甚至也沒有要和它相似，它的語法�
 
 ### 使用Google App Script串接Google Sheet
 
+使用`doGet` `doPost`和`spreadsheet`功能做一個api
+
 ## 前端-串接
+
+讓網站能用你的api
+
+大概就醬

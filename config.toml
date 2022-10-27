@@ -5,7 +5,7 @@ theme = "aether"
 googleAnalytics = "281251197"
 
 [params]
-  brand = "毛哥EM的筆記 EM's Notes"
+  brand = "EM's Notes"
   description = "My notes for everyting"
   # bgimg = "Path, within the 'assets' folder, of the image used for the page background - optional"
   # headshotimg = "Path, within the 'assets' folder, of the image used for the home page header - optional"
