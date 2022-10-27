@@ -43,18 +43,6 @@ resources:
 3. 伺服器如果允許用戶端請求，伺服器就會傳送「200 OK」訊息，意味著「好，你可以閱覽這個網站，那我給你網站資料囉～」並開始對瀏覽器以一小串稱作「資料封包」的組合形式，傳送網站的檔案。這就像是商店給你商品，你接著把它們都帶回家一樣
 4. 瀏覽器把一小塊一小塊的東西，組合成完整的網站，並把它呈現起來－－商品送到家門口後，閃亮亮的新貨在你眼前，超棒的啦！
 
-## [講講 DNS](https://developer.mozilla.org/zh-TW/docs/Learn/Getting_started_with_the_web/How_the_Web_works#%E8%AC%9B%E8%AC%9B_dns "Permalink to 講講 DNS")
-
-真正的網址，並不是在瀏覽器的網址列上，輸入好記好讀的字串，就能找到你最愛的網站。它們其實是一串特殊的數字，看起來就像是這樣：63.245.215.20
-
-這叫做 [IP 地址](https://developer.mozilla.org/zh-TW/docs/Glossary/IP_Address)，網路上它擁有獨一無二的位置。不過，記數字果然不簡單吧？這就是要發明域名伺服器的原因。他們會把你在瀏覽器輸入的網址（例如 mozilla.org）和網站的真實位置（IP）相匹配
-
-網站能直接透過其 IP 位置訪問之：在瀏覽器的網址列輸入 `63.245.215.20` 的話，可以走到 Mozilla 的網站。
-
-## [再講講封包](https://developer.mozilla.org/zh-TW/docs/Learn/Getting_started_with_the_web/How_the_Web_works#%E5%86%8D%E8%AC%9B%E8%AC%9B%E5%B0%81%E5%8C%85 "Permalink to 再講講封包")
-
-稍早我們用了「封包」來描述從伺服器傳到用戶端的資料格式。這裡的「封包」是什麼意思呢？通常資料在網路傳送時，會傳送上千個小資料，這樣在同一時間和同一網站，才能有很多用戶下載內容。如果網站只傳送一個大傢伙過去，那在同一時間就只能有一個用戶能下載，網路會變得很慢、很無聊...
-
 ### 前後端
 
 ## 前端
@@ -106,5 +94,21 @@ Markdown不是要來取代HTML，甚至也沒有要和它相似，它的語法�
 ## 前端-串接
 
 讓網站能用你的api
+
+## 連上Line
+
+通知，群發消息，收回覆
+
+### Line Notify
+
+### Line Bot
+
+#### 對話-Message API
+
+##### Flex Message
+
+### Line Liff
+
+#### 建立Liff網站
 
 大概就醬
