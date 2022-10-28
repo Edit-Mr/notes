@@ -3,7 +3,7 @@
 title: "基本HTML語法整理"
 date: 2022-10-28
 description: "HTML語法整理! 3分鐘快速弄懂常用語法！"
-categories: ["Coding"]
+categories: ["Web Design"]
 dropCap: true
 displayInMenu: false
 displayInList: true
