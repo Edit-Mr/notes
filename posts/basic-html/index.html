@@ -7,123 +7,133 @@
 </span></span><span style=display:flex><span>  網站內容
 </span></span><span style=display:flex><span>  &lt;/body&gt;
 </span></span><span style=display:flex><span>&lt;/html&gt;
-</span></span></code></pre></div><p>看過上述內容你已經瞭解了一個最基本的HTML檔案格式是什麼樣子，接下來這裡整理了HTML基本語法，讓各位在開發時能更快速查詢自己想要的語法。你可以建立一個html檔並直接全選貼上。查看實際效果</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;html&gt;
-</span></span><span style=display:flex><span>  &lt;head&gt;
+</span></span></code></pre></div><p>看過上述內容你已經瞭解了一個最基本的HTML檔案格式是什麼樣子，接下來這裡整理了HTML基本語法，讓各位在開發時能更快速查詢自己想要的語法。你可以建立一個html檔並直接全選貼上。查看實際效果</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span><span style=color:red;font-style:italic>&lt;!DOCTYPE html&gt;</span>
+</span></span><span style=display:flex><span>&lt;html&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;head&gt;
+</span></span><span style=display:flex><span>    &lt;meta charset=<span style=color:#009c00>&#34;UTF-8&#34;</span>&gt;
 </span></span><span style=display:flex><span>    &lt;title&gt;標題&lt;/title&gt;
-</span></span><span style=display:flex><span>  &lt;/head&gt;
-</span></span><span style=display:flex><span>  &lt;body&gt;
-</span></span><span style=display:flex><span><span style=color:red;font-style:italic>&lt;!-- 註解，瀏覽器不會管這一段文字 --&gt;</span>
+</span></span><span style=display:flex><span>    &lt;meta name=<span style=color:#009c00>&#34;description&#34;</span> content=<span style=color:#009c00>&#34;網頁描述&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;meta name=<span style=color:#009c00>&#34;keywords&#34;</span> content=<span style=color:#009c00>&#34;關鍵字&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;meta name=<span style=color:#009c00>&#34;author&#34;</span> content=<span style=color:#009c00>&#34;作者&#34;</span>&gt;
+</span></span><span style=display:flex><span>    <span style=color:red;font-style:italic>&lt;!-- 下面兩個是網頁縮圖 --&gt;</span>
+</span></span><span style=display:flex><span>    &lt;link rel=<span style=color:#009c00>&#34;apple-touch-icon&#34;</span> sizes=<span style=color:#009c00>&#34;180x180&#34;</span> href=<span style=color:#009c00>&#34;https://EM-Tec.github.io/icons/apple-touch-icon.png&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;link rel=<span style=color:#009c00>&#34;icon&#34;</span> type=<span style=color:#009c00>&#34;image/png&#34;</span> sizes=<span style=color:#009c00>&#34;32x32&#34;</span> href=<span style=color:#009c00>&#34;https://EM-Tec.github.io/icons/favicon-32x32.png&#34;</span>&gt;
+</span></span><span style=display:flex><span>&lt;/head&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;h1&gt;一級標題&lt;/h1&gt;
-</span></span><span style=display:flex><span>&lt;h2&gt;二級標題&lt;/h2&gt;
-</span></span><span style=display:flex><span>&lt;h3&gt;三級標題&lt;/h3&gt;
-</span></span><span style=display:flex><span>&lt;h4&gt;四級標題&lt;/h4&gt;
-</span></span><span style=display:flex><span>&lt;h5&gt;五級標題&lt;/h5&gt;
-</span></span><span style=display:flex><span>&lt;h6&gt;六級標題&lt;/h6&gt;
+</span></span><span style=display:flex><span>&lt;body&gt;
+</span></span><span style=display:flex><span>    <span style=color:red;font-style:italic>&lt;!-- 註解，瀏覽器不會管這一段文字 --&gt;</span>
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;p&gt;這是一段說長不長說短不短的一個文章段落&lt;/p&gt;
+</span></span><span style=display:flex><span>    &lt;h1&gt;一級標題&lt;/h1&gt;
+</span></span><span style=display:flex><span>    &lt;h2&gt;二級標題&lt;/h2&gt;
+</span></span><span style=display:flex><span>    &lt;h3&gt;三級標題&lt;/h3&gt;
+</span></span><span style=display:flex><span>    &lt;h4&gt;四級標題&lt;/h4&gt;
+</span></span><span style=display:flex><span>    &lt;h5&gt;五級標題&lt;/h5&gt;
+</span></span><span style=display:flex><span>    &lt;h6&gt;六級標題&lt;/h6&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;a href=<span style=color:#009c00>&#34;&#34;</span>&gt;超連結&lt;/a&gt; 
-</span></span><span style=display:flex><span>&lt;a href=<span style=color:#009c00>&#34;&#34;</span> target=<span style=color:#009c00>&#34;_blank&#34;</span>&gt;新視窗超連結&lt;/a&gt; 
-</span></span><span style=display:flex><span>&lt;b&gt;粗體字&lt;/b&gt; &lt;s&gt;槓掉&lt;/s&gt; &lt;i&gt;斜體字&lt;/i&gt; &lt;u&gt;底線&lt;/u&gt;
-</span></span><span style=display:flex><span>換行&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;p&gt;這是一段說長不長說短不短的一個文章段落&lt;/p&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>插入分格線
-</span></span><span style=display:flex><span>&lt;hr /&gt;
+</span></span><span style=display:flex><span>    &lt;a href=<span style=color:#009c00>&#34;&#34;</span>&gt;超連結&lt;/a&gt;
+</span></span><span style=display:flex><span>    &lt;a href=<span style=color:#009c00>&#34;&#34;</span> target=<span style=color:#009c00>&#34;_blank&#34;</span>&gt;新視窗超連結&lt;/a&gt;
+</span></span><span style=display:flex><span>    &lt;b&gt;粗體字&lt;/b&gt; &lt;s&gt;槓掉&lt;/s&gt; &lt;i&gt;斜體字&lt;/i&gt; &lt;u&gt;底線&lt;/u&gt;
+</span></span><span style=display:flex><span>    換行&lt;br /&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>底下我每個元素都會換行方便閱讀&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;em&gt;強調&lt;/em&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;cite&gt;用於引經據典的文字&lt;/cite&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;code&gt;用於列出一段程式碼&lt;/code&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;comment&gt;...&lt;/comment&gt;	加上註解&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;dfn&gt;顯示&#34;定義&#34;文字&lt;/dfn&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;dir&gt;列表文字標籤&lt;/dir&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;person&gt;顯示人名&lt;/person&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;pre&gt;使用原有排列&lt;/pre&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;samp&gt;...&lt;/samp&gt;	用於引用字&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;strong&gt;	用於加強語氣&lt;/strong&gt;&lt;br /&gt;
-</span></span><span style=display:flex><span>H&lt;sub&gt;2&lt;/sub&gt;O
-</span></span><span style=display:flex><span>2&lt;sup&gt;10&lt;/sup&gt;
+</span></span><span style=display:flex><span>    插入分格線
+</span></span><span style=display:flex><span>    &lt;hr /&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;ul&gt;
-</span></span><span style=display:flex><span>	&lt;li&gt;無序號的列表&lt;/li&gt;
-</span></span><span style=display:flex><span>	&lt;li&gt;無序號的列表&lt;/li&gt;
-</span></span><span style=display:flex><span>	&lt;li&gt;無序號的列表&lt;/li&gt;
-</span></span><span style=display:flex><span>&lt;/ul&gt;
+</span></span><span style=display:flex><span>    底下我每個元素都會換行方便閱讀&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;em&gt;強調&lt;/em&gt;&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;cite&gt;用於引經據典的文字&lt;/cite&gt;&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;code&gt;用於列出一段程式碼&lt;/code&gt;&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;comment&gt;...&lt;/comment&gt; 加上註解&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;dfn&gt;顯示&#34;定義&#34;文字&lt;/dfn&gt;&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;person&gt;顯示人名&lt;/person&gt;&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;pre&gt;使用原有排列&lt;/pre&gt;&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;samp&gt;...&lt;/samp&gt; 用於引用字&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;strong&gt; 用於加強語氣&lt;/strong&gt;&lt;br /&gt;
+</span></span><span style=display:flex><span>    H&lt;sub&gt;2&lt;/sub&gt;O
+</span></span><span style=display:flex><span>    2&lt;sup&gt;10&lt;/sup&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;ol&gt;
-</span></span><span style=display:flex><span>	&lt;li&gt;列表&lt;/li&gt;
-</span></span><span style=display:flex><span>	&lt;li&gt;列表&lt;/li&gt;
-</span></span><span style=display:flex><span>	&lt;li&gt;列表&lt;/li&gt;
-</span></span><span style=display:flex><span>&lt;/ol&gt;
+</span></span><span style=display:flex><span>    &lt;ul&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;無序號的列表&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;無序號的列表&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;無序號的列表&lt;/li&gt;
+</span></span><span style=display:flex><span>    &lt;/ul&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:red;font-style:italic>&lt;!-- 交叉排序 --&gt;</span>
-</span></span><span style=display:flex><span>&lt;dl&gt;
-</span></span><span style=display:flex><span>    &lt;dt&gt;項目一&lt;/dt&gt;
-</span></span><span style=display:flex><span>    &lt;dd&gt;描述一有很多內容說明&lt;/dd&gt;
-</span></span><span style=display:flex><span>    &lt;dt&gt;項目二&lt;/dt&gt;
-</span></span><span style=display:flex><span>    &lt;dd&gt;描述二有很多內容說明&lt;/dd&gt;
-</span></span><span style=display:flex><span>&lt;/dl&gt;
-</span></span><span style=display:flex><span><span style=color:red;font-style:italic>&lt;!-- 多個項目+單一描述 --&gt;</span>
-</span></span><span style=display:flex><span>&lt;dl&gt;
-</span></span><span style=display:flex><span>    &lt;dt&gt;項目一&lt;/dt&gt;
-</span></span><span style=display:flex><span>    &lt;dt&gt;項目二&lt;/dt&gt;
-</span></span><span style=display:flex><span>    &lt;dd&gt;只有一個描述也可以哦&lt;/dd&gt;
-</span></span><span style=display:flex><span>&lt;/dl&gt;
-</span></span><span style=display:flex><span><span style=color:red;font-style:italic>&lt;!-- 單一項目+多個描述 --&gt;</span>
-</span></span><span style=display:flex><span>&lt;dl&gt;
-</span></span><span style=display:flex><span>    &lt;dt&gt;項目一&lt;/dt&gt;
-</span></span><span style=display:flex><span>    &lt;dd&gt;很多個描述也可以哦&lt;/dd&gt;
-</span></span><span style=display:flex><span>    &lt;dd&gt;很多個描述也可以哦&lt;/dd&gt;
-</span></span><span style=display:flex><span>&lt;/dl&gt;
+</span></span><span style=display:flex><span>    &lt;ol&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;列表&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;列表&lt;/li&gt;
+</span></span><span style=display:flex><span>        &lt;li&gt;列表&lt;/li&gt;
+</span></span><span style=display:flex><span>    &lt;/ol&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;img src=<span style=color:#009c00>&#34;圖片網址&#34;</span>  alt=<span style=color:#009c00>&#34;圖片敘述 沒載入成功顯示文字 閱讀器會唸給盲人&#34;</span> /&gt;
+</span></span><span style=display:flex><span>    <span style=color:red;font-style:italic>&lt;!-- 交叉排序 --&gt;</span>
+</span></span><span style=display:flex><span>    &lt;dl&gt;
+</span></span><span style=display:flex><span>        &lt;dt&gt;項目一&lt;/dt&gt;
+</span></span><span style=display:flex><span>        &lt;dd&gt;描述一有很多內容說明&lt;/dd&gt;
+</span></span><span style=display:flex><span>        &lt;dt&gt;項目二&lt;/dt&gt;
+</span></span><span style=display:flex><span>        &lt;dd&gt;描述二有很多內容說明&lt;/dd&gt;
+</span></span><span style=display:flex><span>    &lt;/dl&gt;
+</span></span><span style=display:flex><span>    <span style=color:red;font-style:italic>&lt;!-- 多個項目+單一描述 --&gt;</span>
+</span></span><span style=display:flex><span>    &lt;dl&gt;
+</span></span><span style=display:flex><span>        &lt;dt&gt;項目一&lt;/dt&gt;
+</span></span><span style=display:flex><span>        &lt;dt&gt;項目二&lt;/dt&gt;
+</span></span><span style=display:flex><span>        &lt;dd&gt;只有一個描述也可以哦&lt;/dd&gt;
+</span></span><span style=display:flex><span>    &lt;/dl&gt;
+</span></span><span style=display:flex><span>    <span style=color:red;font-style:italic>&lt;!-- 單一項目+多個描述 --&gt;</span>
+</span></span><span style=display:flex><span>    &lt;dl&gt;
+</span></span><span style=display:flex><span>        &lt;dt&gt;項目一&lt;/dt&gt;
+</span></span><span style=display:flex><span>        &lt;dd&gt;很多個描述也可以哦&lt;/dd&gt;
+</span></span><span style=display:flex><span>        &lt;dd&gt;很多個描述也可以哦&lt;/dd&gt;
+</span></span><span style=display:flex><span>    &lt;/dl&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>輸入欄位很多種，之後慢慢講
-</span></span><span style=display:flex><span>&lt;input value=<span style=color:#009c00>&#34;我的初始值&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;img src=<span style=color:#009c00>&#34;圖片網址&#34;</span> alt=<span style=color:#009c00>&#34;圖片敘述 沒載入成功顯示文字 閱讀器會唸給盲人&#34;</span> /&gt;
+</span></span><span style=display:flex><span>    &lt;br /&gt;
+</span></span><span style=display:flex><span>    輸入欄位很多種，之後慢慢講
+</span></span><span style=display:flex><span>    &lt;input value=<span style=color:#009c00>&#34;我的初始值&#34;</span>&gt;
+</span></span><span style=display:flex><span>    &lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;marquee&gt;跑馬燈效果&lt;/marquee&gt;
+</span></span><span style=display:flex><span>    &lt;menu&gt;條列文字標籤&lt;/menu&gt;
+</span></span><span style=display:flex><span>    &lt;meta name=<span style=color:#009c00>&#34;refresh&#34;</span> content url&gt; 自動更新文件內容
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;marquee&gt;跑馬燈效果&lt;/marquee&gt;
-</span></span><span style=display:flex><span>&lt;menu&gt;條列文字標籤&lt;/menu&gt;
-</span></span><span style=display:flex><span>&lt;meta name=<span style=color:#009c00>&#34;refresh&#34;</span> content url&gt;	自動更新文件內容
+</span></span><span style=display:flex><span>    &lt;select&gt;
+</span></span><span style=display:flex><span>        &lt;option&gt;請選擇你最愛的寵物&lt;/option&gt;
+</span></span><span style=display:flex><span>        &lt;option&gt;Dog&lt;/option&gt;
+</span></span><span style=display:flex><span>        &lt;option&gt;Cat&lt;/option&gt;
+</span></span><span style=display:flex><span>        &lt;option&gt;Hamster&lt;/option&gt;
+</span></span><span style=display:flex><span>        &lt;option&gt;Parrot&lt;/option&gt;
+</span></span><span style=display:flex><span>        &lt;option&gt;Spider&lt;/option&gt;
+</span></span><span style=display:flex><span>        &lt;option&gt;Goldfish&lt;/option&gt;
+</span></span><span style=display:flex><span>    &lt;/select&gt;
+</span></span><span style=display:flex><span>    &lt;br /&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;select&gt;
-</span></span><span style=display:flex><span>    &lt;option&gt;請選擇你最愛的寵物&lt;/option&gt;
-</span></span><span style=display:flex><span>    &lt;option&gt;Dog&lt;/option&gt;
-</span></span><span style=display:flex><span>    &lt;option&gt;Cat&lt;/option&gt;
-</span></span><span style=display:flex><span>    &lt;option&gt;Hamster&lt;/option&gt;
-</span></span><span style=display:flex><span>    &lt;option&gt;Parrot&lt;/option&gt;
-</span></span><span style=display:flex><span>    &lt;option&gt;Spider&lt;/option&gt;
-</span></span><span style=display:flex><span>    &lt;option&gt;Goldfish&lt;/option&gt;
-</span></span><span style=display:flex><span>&lt;/select&gt;
+</span></span><span style=display:flex><span>    &lt;textarea&gt;輸入文字框&lt;/textarea&gt; &lt;br /&gt;
 </span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    底下是表格&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;table&gt;
+</span></span><span style=display:flex><span>        &lt;thead&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;th colspan=<span style=color:#009c00>&#34;2&#34;</span>&gt;The table header&lt;/th&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>        &lt;/thead&gt;
+</span></span><span style=display:flex><span>        &lt;tbody&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;The table body&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;with two columns&lt;/td&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;The table body&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;with two columns&lt;/td&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>            &lt;tr&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;The table body&lt;/td&gt;
+</span></span><span style=display:flex><span>                &lt;td&gt;with two columns&lt;/td&gt;
+</span></span><span style=display:flex><span>            &lt;/tr&gt;
+</span></span><span style=display:flex><span>        &lt;/tbody&gt;
+</span></span><span style=display:flex><span>    &lt;/table&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;textarea&gt;輸入文字框&lt;/textarea&gt;	&lt;br /&gt;
+</span></span><span style=display:flex><span>    &lt;caption&gt;為表格加上標題&lt;/caption&gt;
+</span></span><span style=display:flex><span>&lt;/body&gt;
 </span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>底下是表格&lt;br /&gt;
-</span></span><span style=display:flex><span>&lt;table&gt;
-</span></span><span style=display:flex><span>    &lt;thead&gt;
-</span></span><span style=display:flex><span>        &lt;tr&gt;
-</span></span><span style=display:flex><span>            &lt;th colspan=<span style=color:#009c00>&#34;2&#34;</span>&gt;The table header&lt;/th&gt;
-</span></span><span style=display:flex><span>        &lt;/tr&gt;
-</span></span><span style=display:flex><span>    &lt;/thead&gt;
-</span></span><span style=display:flex><span>    &lt;tbody&gt;
-</span></span><span style=display:flex><span>        &lt;tr&gt;
-</span></span><span style=display:flex><span>            &lt;td&gt;The table body&lt;/td&gt;
-</span></span><span style=display:flex><span>            &lt;td&gt;with two columns&lt;/td&gt;
-</span></span><span style=display:flex><span>        &lt;/tr&gt;
-</span></span><span style=display:flex><span>        &lt;tr&gt;
-</span></span><span style=display:flex><span>            &lt;td&gt;The table body&lt;/td&gt;
-</span></span><span style=display:flex><span>            &lt;td&gt;with two columns&lt;/td&gt;
-</span></span><span style=display:flex><span>        &lt;/tr&gt;
-</span></span><span style=display:flex><span>        &lt;tr&gt;
-</span></span><span style=display:flex><span>            &lt;td&gt;The table body&lt;/td&gt;
-</span></span><span style=display:flex><span>            &lt;td&gt;with two columns&lt;/td&gt;
-</span></span><span style=display:flex><span>        &lt;/tr&gt;
-</span></span><span style=display:flex><span>    &lt;/tbody&gt;
-</span></span><span style=display:flex><span>&lt;/table&gt;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>&lt;caption&gt;為表格加上標題&lt;/caption&gt;
-</span></span><span style=display:flex><span>  &lt;/body&gt;
 </span></span><span style=display:flex><span>&lt;/html&gt;
 </span></span></code></pre></div><p>整個網站都沒有裝飾，表格連框都沒有很醜對吧，之後我們來用CSS裝飾它吧！</p></article></main><nav class="end-nav side-padding"><a ontouchstart=cardPressed.call(this) ontouchend=cardReleased.call(this) ontouchmove=cardReleased.call(this) href=https://edit-mr.github.io/notes/posts/web-design/ class="card blog-card bc-next" rel=bookmark><div class=card-img-container><p class=card-img-overlay>Next Article</p><picture><source srcset="https://edit-mr.github.io/notes/posts/web-design/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_400x0_resize_q75_lanczos.jpg 1x, https://edit-mr.github.io/notes/posts/web-design/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_800x0_resize_q75_lanczos.jpg 2x, https://edit-mr.github.io/notes/posts/web-design/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_1200x0_resize_q75_lanczos.jpg 3x"><img src=https://edit-mr.github.io/notes/posts/web-design/mdd-iphone_hu84a3e811f2069d8ee93a6de645aedba9_796307_400x0_resize_q75_lanczos.jpg class=card-img alt="An iphone with a website featuring the aether theme"></picture></div><article class=card-body><h2 class=card-title>網頁設計課程大綱</h2><p class=card-text>網頁設計課程大綱</p><div class="card-subtext muted-text"><p>Posted <time datetime=2022-10-27>Oct 27, 2022</time></p><p>#Web Design</p></div></article></a></nav><footer class=side-padding style=background-image:url(https://edit-mr.github.io/notes/img/home-blob-flip.svg)><a href=https://edit-mr.github.io/notes class=footer-link><img class=footer-icon src=https://edit-mr.github.io/notes/icons/home.svg alt=Home></a>
 <a href=https://github.com/Edit-Mr class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/github.svg alt=GitHub></a>
