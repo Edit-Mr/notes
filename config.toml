@@ -2,7 +2,7 @@ baseURL = "https://edit-mr.github.io/notes"
 languageCode = "en"
 title = "毛哥EM的筆記 EM's Notes"
 theme = "aether"
-googleAnalytics = "281251197"
+googleAnalytics = "G-9R5PZG2VQG"
 
 [params]
   brand = "EM's Notes"
