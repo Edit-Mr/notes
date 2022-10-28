@@ -28,6 +28,114 @@ draft: false
 看過上述內容你已經瞭解了一個最基本的HTML檔案格式是什麼樣子，接下來為各位整理了HTML基本語法，讓各位在開發時能更快速查詢自己想要的語法。
 
 Html語法整理：
+```html
+<html>
+  <head>
+    <title>標題</title>
+  </head>
+  <body>
+  網站內容
+<!-- 註解，瀏覽器不會管這一段文字 -->
+<a href="">超連結</a> 
+<a href="" target="_blank">新視窗超連結</a> 
+<b>粗體字</b> <s>槓掉</s> <i>斜體字</i> <u>底線</u>
+換行<br />
+
+加上分格線
+<hr />
+
+<caption>為表格加上標題</caption>
+<cite>用於引經據典的文字<cite>
+
+
+<code>用於列出一段程式碼</code>
+<comment>...</comment>	加上註解
+<dfn>顯示"定義"文字</dfn>
+<dir>列表文字標籤</dir>
+
+<dl>
+　<dt>項目標題</dt>
+　<dd>項目描述 ...</dd>
+　...
+</dl>
+
+<ul>
+	<li>無序號的列表</li>
+	<li>無序號的列表</li>
+	<li>無序號的列表</li>
+</ul>
+
+<ol>
+	<li>列表</li>
+	<li>列表</li>
+	<li>列表</li>
+</ol>
+
+
+
+<em>強調之用</em>
+
+<h1>~<h6>	設定文字大小(H1為最大)
+
+<i>	斜體字
+<img align>	調整圖形影像的位置
+<img alt>	為你的圖形影像加註
+<img dynsrc loop>	加入影片
+<img height width>	插入圖片並預設圖形大小
+<img hspace>	插入圖片並預設圖形的左右邊界
+<img lowsrc>	預載圖片功能
+<img src border>	設定圖片邊界
+<img src>	插入圖片
+<img vspace>	插入圖片並預設圖形的上下邊界
+<input type name value>	在表單中加入輸入欄位
+<isindex>	定義查詢用表單
+<kbd>...</kbd>	表示使用者輸入文字
+<marquee>	跑馬燈效果
+<menu>...</menu>	條列文字標籤
+<meta name="refresh" content url>	自動更新文件內容
+<multiple>	可同時選擇多項的列表欄
+<noframe>	定義不出現分割視窗的文字
+<ol>...</ol>	有序號的列表
+<option>	定義表單中列表欄的項目
+<p align>	設定對齊方向
+<p>	分段
+<person>...</person>	顯示人名
+<pre>	使用原有排列
+<samp>...</samp>	用於引用字
+<select>...</select>	在表單中定義列表欄
+<small>	顯示小字體
+<strike>	文字加橫線
+<strong>	用於加強語氣
+<sub>	下標字
+<sup>	上標字
+
+<textarea name rows cols>	表單中加入多少列的文字輸入欄
+<textarea wrap>	決定文字輸入欄是自動否換行
+<th>...</th>	定義表格的標頭欄位
+<tr>...</tr>	定義表格美一行
+<tt>	打字機字體
+<u>	文字加底線
+
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">The table header</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>The table body</td>
+            <td>with two columns</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+  </body>
+</html>
+```
 
 |	屬性名稱	|	說明	|
 |	 -------------------------------------- 	|	 -------------------------------------- 	|
@@ -116,4 +224,3 @@ Html語法整理：
 | `	<u>	` |	文字加底線	|
 | `	<ul type>...</ul>	` |	無序號的列表 ( 可指定符號 )	|
 | `	<var>...</var>	` |	用於顯示變數	|
-![image](https://user-images.githubusercontent.com/61068739/198489664-87b1a473-869f-4219-8728-1c3b25bfe121.png)
