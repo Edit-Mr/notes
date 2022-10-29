@@ -36,7 +36,7 @@ resources:
 
 #### 所以我說到底發生了啥？
 
-當你在瀏覽器輸入網址時（你可以想像說自己要走去商店時）：
+當你在瀏覽器輸入網址時：
 
 1. 瀏覽器會先去 DNS 伺服器尋找託管網站的伺服器，其真實位置所在（如同你去尋找商店的地址）
 2. 瀏覽器向伺服器傳送 HTTP 訊息，請求伺服器向用戶端傳送網站的複本（如同去商店下訂單）。在用戶端及伺服器的之間，請求訊息與其他資訊，會使用 TCP/IP 在網路連線之間傳送。
@@ -55,7 +55,7 @@ Visual Studio Code是一款由微軟開發且跨平台的免費原始碼編輯�
 
 ### HTML語法
 
-讓網站不只是純文字，有標題、表格、超連結等
+讓網站不只是純文字，有標題、表格、超連結等之分。
 
 ### CSS語法
 
@@ -71,9 +71,36 @@ Markdown的語法有個主要的目的：用來作為一種網路內容的*寫�
 
 Markdown不是要來取代HTML，甚至也沒有要和它相似，它的語法種類不多，只和HTML的一部分有關係，重點*不是*要創造一種更容易寫作HTML文件的語法，我認為HTML已經很容易寫了，Markdow的重點在於，它能讓文件更容易閱讀、編寫。HTML 是一種*發佈*的格式，Markdown是一種*編寫*的格式，因此，Markdown的格式語法只涵蓋純文字可以涵蓋的範圍。
 
-### 基本Git
+### 認識 Brew
 
-你也可以想像Github是物流中心，而git就是物流。我們透過物流來傳資料到Github的倉庫合獲取檔案。git厲害的地方是每次上傳或下載時它會比較差異，只傳送不同的檔案。除了節省時間流量之外，因為記錄了每一次的更動，所以可以進行版本控制。包括釋出不同版本，和復原到指定版本。
+Brew是給MacOS用的一個軟體管理器（類似App Store，不過是下載沒有使用者介面，要用指令執行的軟體的）。今天我們從官網複製貼上了下載brew的指令到終端機，一路上按enter確認，輸入密碼，就安裝完成了。這時候終端機說：
+```
+==> Next steps:
+- Run these three commands in your terminal to add Homebrew to your PATH:
+    echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/weisuch/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/weisuch/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+```
+
+他在提醒我們當我們跑去其他資料夾時電腦不知道brew裝在哪裡，所以我們一次複製貼上了他給的那三個指令來加入**全域變數清單**（就是一張電腦的地圖告訴他要去咖哩找檔案）
+```
+echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/weisuch/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/weisuch/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+### 基本 Git
+
+你也可以想像git是物流。我們透過物流來傳資料到Github的倉庫以及獲取檔案。git厲害的地方是每次上傳或下載時它會比較差異，只傳送不同的地方。除了節省時間流量之外，因為記錄了每一次的更動，所以可以進行版本控制。包括釋出不同版本，和復原到指定版本。
+
+我們用brew來安裝git
+
+```
+brew install git
+```
 
 ### JavaScript
 
