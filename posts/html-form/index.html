@@ -1,0 +1,74 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>基本HTML語法整理 &#183; 毛哥EM的筆記 EM's Notes</title><meta name=description content="HTML Form"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="EM's Notes"><meta property="og:description" content="My notes for everyting"><meta property="og:url" content="https://edit-mr.github.io/notes/posts/html-form/"><meta property="og:site_name" content="EM's Notes"><meta property="og:image" content="https://edit-mr.github.io/notes"><meta name=twitter:card content="summary"><meta name=twitter:title content="EM's Notes"><meta name=twitter:description content="My notes for everyting"><meta name=twitter:site content="https://edit-mr.github.io/notes"><meta name=twitter:creator content><meta name=twitter:image content="https://edit-mr.github.io/notes"><link href=https://edit-mr.github.io/notes/css/katex.min.css rel=stylesheet><link href=https://edit-mr.github.io/notes/css/concated.min.css rel=stylesheet><script async src="https://www.googletagmanager.com/gtag/js?id=G-9R5PZG2VQG"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-9R5PZG2VQG",{anonymize_ip:!1})}</script></head><body class=single-body><nav class="nav-bar side-padding"><h1 class=nav-header><a href=https://edit-mr.github.io/notes class=nav-text>EM's Notes</a></h1><div class=hamburger-menu><input class=hamburger-menu-button type=checkbox onclick=hamburgerMenuPressed.call(this)><div class=hamburger-menu-icon><span></span>
+<span></span></div><ul id=menu class=hamburger-menu-overlay><li><a href=https://edit-mr.github.io/notes class=hamburger-menu-overlay-link>Home</a></li><li><a href=https://edit-mr.github.io/notes/about/ class=hamburger-menu-overlay-link>關於 About</a></li><li><a href=https://edit-mr.github.io/notes/categories/coding/ class=hamburger-menu-overlay-link>Coding</a></li><li><a href=https://edit-mr.github.io/notes/categories/debate/ class=hamburger-menu-overlay-link>Debate</a></li><li><a href=https://edit-mr.github.io/notes/categories/hugo/ class=hamburger-menu-overlay-link>Hugo</a></li><li><a href=https://edit-mr.github.io/notes/categories/web-design/ class=hamburger-menu-overlay-link>Web Design</a></li><li><a href=https://edit-mr.github.io/index.xml class=hamburger-menu-overlay-link>rss</a></li></ul></div></nav><main class="content side-text-padding"><article class="post dropcase"><header class=post-header><h1 class=post-title>基本HTML語法整理</h1><p class=post-date>Posted <time datetime=2022-10-31>Oct 31, 2022</time></p></header><p>HTML 表單 (form) 是用來讓使用者輸入資料，這些資料可以用來和使用者互動，例如表單內容填完後可以傳回遠端伺服器 (web server)，像常見的連絡表單。</p><h2 id=一個完整的-html-表單範例>一個完整的 HTML 表單範例</h2><pre tabindex=0><code>&lt;form action=&#34;/formprocess.php&#34; method=&#34;post&#34;&gt;
+
+    &lt;p&gt;Name:&lt;/p&gt;
+    &lt;p&gt;&lt;input type=&#34;text&#34; name=&#34;name&#34; value=&#34;你的名字&#34;&gt;&lt;/p&gt;
+
+    &lt;p&gt;Email:&lt;/p&gt;
+    &lt;p&gt;&lt;input name=&#34;species&#34; type=&#34;text&#34;&gt;&lt;/p&gt;
+
+    &lt;p&gt;Comments: &lt;/p&gt;
+    &lt;p&gt;&lt;textarea name=&#34;comments&#34; rows=&#34;5&#34; cols=&#34;20&#34;&gt;你的留言&lt;/textarea&gt;&lt;/p&gt;
+
+    &lt;p&gt;請問你最有興趣學習的技術:&lt;/p&gt;
+    &lt;p&gt;&lt;input type=&#34;radio&#34; name=&#34;interest&#34; value=&#34;html&#34;&gt; HTML&lt;/p&gt;
+    &lt;p&gt;&lt;input type=&#34;radio&#34; name=&#34;interest&#34; value=&#34;css&#34;&gt; CSS&lt;/p&gt;
+    &lt;p&gt;&lt;input type=&#34;radio&#34; name=&#34;interest&#34; value=&#34;js&#34;&gt; JavaScript&lt;/p&gt;
+
+    &lt;p&gt;&lt;input type=&#34;submit&#34; value=&#34;送出資料&#34;&gt;&lt;/p&gt;
+
+&lt;/form&gt;
+</code></pre><h2 id=input>input</h2><p>標籤的屬性 (attributes)
+name: 欄位名稱 的 name 屬性用來指定送出去的該筆資料要用什麼名稱，目的是讓遠端伺服器才能透過明確定義好的名稱去取出對應的欄位值。</p><p>value: 指定初始值 (default value)
+disabled: 將元件設定為禁用狀態
+readonly: 將元件設為唯獨不可更改內容的狀態</p><p>autocomplete: 是否啟用瀏覽器自動完成功能
+值有 on 和 off，預設是 on。</p><p>autofocus: 當頁面載入後，自動聚焦在此欄位上
+如果有設定 autofocus，當頁面載入後，瀏覽器會自動將畫面聚焦 (focus) 在該欄位上，但要注意，整個頁面所有的表單元件中只能有一個 autofocus 而已喔。</p><p>required: 指定為必填欄位
+當送出表單時，如果聲明為 required 的欄位內容沒有填寫，會被瀏覽器提醒必填。</p><p>輸入類型的 input 欄位還有這些屬性可以運用：</p><p>maxlength: 指定最多能輸入多少字
+minlength: 指定最少需要輸入多少字
+size: 一個數字指定欄位顯示寬度 (characters wide)
+text input 的 placeholder 屬性: 輸入的提示訊息</p><p>密碼輸入欄位
+密碼文字輸入欄位和 text 的差別是，使用者輸入的內容不會被明碼顯示在螢幕畫面中。</p><p>核取方塊
+核取方塊 (check box / tick box) 用來讓使用者勾選某個選項是否成立，可以再搭配 value 屬性 (預設值是 &ldquo;on&rdquo;) 來指定當使用者勾選此方塊時要傳送給遠端伺服器什麼值。</p><p>Subscribe to HTML newsletter? Subscribe to JavaScript newsletter?</p><p>當使用者勾選時，就會隨著表單送出像是 &ldquo;subscribe=newsletter&rdquo; 的資料；相反的，如果 checkbox 沒有被勾選，就不會有任何資料被送出。</p><p>對於不同的 checkbox 你可以用一樣的 name 也可以用不一樣，一樣的話，會送出像是 &ldquo;subscribe=html-newsletter&subscribe=js-newsletter&rdquo; 格式的資料。</p><p>選項按鈕
+radio (radio button) 是選項按鈕，用來處理表單中有多選一時的情況，搭配 value 屬性 (預設值是 &ldquo;on&rdquo;) 來指定當使用者選取此選項時要傳送給遠端伺服器什麼值。</p><p>同一組 radio button 的選項，需要都是一樣的 name。</p><p>請選擇你最喜歡的顏色： red green blue</p><p>checkbox 和 radio 的 checked 屬性: 預設勾選
+checked 可以將該 checkbox / radio 的初始狀態設定為已選取。</p><p>Subscribe to newsletter?</p><p>表單的送出按鈕 (submit button)
+當使用者點了 submit button 就會送出表單給遠端的伺服器，用 value 屬性可以設定按鈕名稱。</p><p>重設表單狀態
+reset 用來讓使用者點了可以重設表單內容回到初始狀態，而 value 屬性可以設定 reset 按鈕的名稱。</p><p>圖片按鈕可以搭配這些屬性使用：</p><p>src: 指定圖片位址
+alt: 指定當圖片下載失敗時的替代文字
+width: 指定圖片顯示寬度
+height: 指定圖片顯示高度</p><p>圖片送出按鈕還有一個特性是當送出表單時，會同時送出座標點 (coordinates) (x, y) 的額外資訊，表示使用者點擊了圖片中的哪個位置，座標軸是以圖片的左上角為 (0, 0)。送出的資料格式會像是 &ldquo;x=52&y=55&rdquo;，如果你有設定 name 名稱，例如 name=&ldquo;position&rdquo;，則送出去的資料格式會像是 &ldquo;position.x=52&position.y=55&rdquo;。</p><p>檔案上傳 (file upload)
+type=&ldquo;file&rdquo; 用來讓使用者可以從本機端選擇檔案上傳。</p><p>搭配 accept 屬性可以限制允許上傳的檔案類型 (file type)，可以用逗點分隔開多種允許類型，accept 可以設定的值有：</p><p>.檔案類型: 例如 .jpg, .pdf, .doc
+明確指定 MIME type: 例如 image/jpeg, image/png
+audio/<em>: 指任何聲音檔
+video/</em>: 指任何影片檔
+image/*: 指任何圖檔
+舉個例子：</p><p>搭配 multiple 屬性，一次可同時選多個檔案上傳：</p><p>搭配 capture 屬性，可以用來開啟使用手機的照相機鏡頭：</p><p>拍照上傳</p><p>拍影片上傳</p><p>用麥克風錄音上傳
+還可以指定要開啟手機的前鏡頭或後鏡頭，設定 capture 的屬性值：</p><p>user: 指定要開啟前鏡頭
+environment: 指定要開啟後鏡頭
+front (user) - 前鏡頭</p><p>back (environment) - 後鏡頭 表單按鈕
+button 通常用來搭配 JavaScript 來動態操作表單內容。</p><p>搜尋欄位
+搜尋的文字輸入框，和 type=&ldquo;text&rdquo; 主要的差異是欄位用途在語意上更明確，有些瀏覽器可能也會針對搜尋框顯示不同的樣式。</p><p>可以再搭配這些屬性使用：</p><p>max: 可以輸入的最晚日期
+min: 可以輸入的最早日期
+step: 設定一個數字，用來控制日期元件一次跳動的幅度；或在送出表單之前，瀏覽器會對日期欄位做驗證，日期需要符合 step 設定的跳動區間
+例子：</p><p></p><p>時間輸入欄位
+type=&ldquo;time&rdquo; 用來建立一個時間輸入欄位，時間的格式為 24 小時制的 hh:mm。</p><p>可以再搭配這些屬性使用：</p><p>max: 可以輸入的最晚時間
+min: 可以輸入的最早時間
+step: 設定一個數字，用來控制時間元件一次跳動的幅度；或在送出表單之前，瀏覽器會對時間欄位做驗證，時間需要符合 step 設定的跳動區間
+例子：</p><p></p><p>數字輸入欄位
+數字輸入欄位只允許輸入數字。</p><p>可以再搭配這些屬性使用：</p><p>max: 可以輸入的最大值
+min: 可以輸入的最小值
+step: 設定一個數字，用來控制數字元件一次跳動的幅度；或在送出表單之前，瀏覽器會對欄位做驗證，數字需要符合 step 設定的跳動區間
+例子：</p><p></p><p>number 欄位在預設上，只能輸入整數，如果你想要能夠輸入小數點需要去調整 step 的屬性值，例如設定 step=&ldquo;0.1&rdquo; 表示能輸入到小數點第一位；step=&ldquo;0.01&rdquo; 表示能輸入到小數點第二位，依此類推；step=&ldquo;any&rdquo; 則是用來表示可以輸入任何數字。</p><p>數字範圍滑動選取欄位
+type=&ldquo;range&rdquo; 可以讓使用者用滑動的方式在一個數字區間內選擇出一個值，可以應用在對數字精準度要求不高的場景，像是調整音量大小。</p><p>可以再搭配這些屬性使用：</p><p>max: 範圍中可選的最大值
+min: 範圍中可選的最小值
+step: 設定一個數字，用來控制元件數字一次跳動的幅度；或在送出表單之前，瀏覽器會對欄位做驗證，數字需要符合 step 設定的跳動區間
+例子：</p><p>顏色選擇器 (color picker)
+type=&ldquo;color&rdquo; 用來讓使用者挑選顏色，顏色的格式為 #rrggbb。</p><p>範例：</p><p>表單欄位驗證 (pattern validation) - pattern 屬性
+text, date, search, url, tel, email 和 password 等輸入欄位可以利用 pattern 屬性搭配正規表達式 (regular expression) 來做表單欄位驗證。</p><p>語法：</p></article></main><nav class="end-nav side-padding"><a ontouchstart=cardPressed.call(this) ontouchend=cardReleased.call(this) ontouchmove=cardReleased.call(this) href=https://edit-mr.github.io/notes/posts/basic-html/ class="card blog-card bc-next" rel=bookmark><article class=card-body><h2 class=card-title>基本HTML語法整理</h2><p class=card-text>HTML語法整理! 3分鐘快速弄懂常用語法！</p><div class="card-subtext muted-text"><p>Posted <time datetime=2022-10-28>Oct 28, 2022</time></p><p>#Web Design</p></div></article></a></nav><footer class=side-padding style=background-image:url(https://edit-mr.github.io/notes/img/home-blob-flip.svg)><a href=https://edit-mr.github.io/notes class=footer-link><img class=footer-icon src=https://edit-mr.github.io/notes/icons/home.svg alt=Home></a>
+<a href=https://github.com/Edit-Mr class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/github.svg alt=GitHub></a>
+<a href=https://www.instagram.com/elvisdragonmao/ class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/instagram.svg alt=Instagram></a>
+<a href=https://edit-mr.github.io/index.xml class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/rss.svg alt=RSS></a>
+<a href=https://www.youtube.com/channel/UCiXuSx3IuiYI87dHOhVxC6A class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/youtube.svg alt=Youtube></a></footer><script defer src=https://edit-mr.github.io/notes/js/katex.min.js></script>
+<script defer src=https://edit-mr.github.io/notes/js/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script src=https://edit-mr.github.io/notes/js/core.min.js></script></body></html>
