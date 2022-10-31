@@ -284,3 +284,48 @@ text, date, search, url, tel, email 和 password 等輸入欄位可以利用 pat
 
 <input type="email" pattern=".+@beststartupever.com">
 如果使用者輸入的內容不符合 pattern，在表單送出去之前就會被瀏覽器驗證錯誤而擋下。
+
+## textarea
+
+<textarea> 可以用來在表單 (form) 中，建立一個可以輸入多行文字的輸入框 (multi-line textbox)。
+
+<textarea> 標籤上有這些屬性 (attributes)：
+
+name: 聲明欄位名稱
+rows: 一個數字，設定輸入框的高度是幾行文字 (lines)，預設是 2
+cols: 一個數字，設定輸入框的寬度是多少文字 (characters)，預設是 20
+maxlength: 一個數字，限定輸入的文字長度上限是幾個字
+minlength: 一個數字，限定輸入的文字長度最少是幾個字
+placeholder: 輸入欄位中的提示訊息
+disabled: 將欄位設定為禁用的狀態，是一個布林 (boolean) 屬性
+readonly: 將欄位設定為唯讀不可編輯的狀態，是一個布林 (boolean) 屬性
+required: 將欄位設定為必填，是一個布林 (boolean) 屬性
+如果要在 textarea 中設定預設文字，不是像 <input> 一樣用 value 屬性喔，是直接將文字放在 <textarea>內容</textarea> 標籤之間，而內容文字的換行是使用一般的文字換行符號 \n，不是用 <br> 喔。
+
+textarea 使用範例：
+
+<textarea name="mytext"
+          rows="6"
+          cols="40"
+          required>
+我是...
+多行....
+輸入框....
+</textarea>
+    
+## button
+  
+<button> 標籤 (tag) 是用來建立一個按鈕，而按鈕文字是放在 <button></button> 之間。
+
+<button> 有下面這些屬性 (attributes)：
+
+name: 按鈕名稱
+type: 按鈕的形式，有三種選項：
+submit: 表單送出按鈕，預設值
+reset: 表單內容重置按鈕
+button: 沒任何特殊功能的一般按鈕，通常配合 JavaScript 使用
+value: 當 type="submit" 時，隨表單送出給遠端 server 的值
+disabled: 禁用此按鈕
+使用範例：
+
+<button type="button">Push Me</button>
