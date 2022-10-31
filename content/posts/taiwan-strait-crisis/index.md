@@ -18,6 +18,46 @@ This Post isn't public cus our opponent may google this (:
 > <https://www.economist.com/asia/2022/08/03/nancy-pelosi-has-left-taiwan-the-real-crisis-may-be-just-beginning>
 > Video:<https://www.youtube.com/watch?v=gZ7hGoUEGCM&t=22s>
 
+- China's opposition
+  
+  - MIlitary
+    
+    - The four-day military exercise began on August 4.
+    
+    - Chinese warplanes approach the unofficial border between China and Taiwan waters and airspace.
+  
+  - Economy
+    
+    - Prohibition of import of agricultural products, fish and other products.
+
+- Biden in a bind
+  
+  - Did not mark a change in America’s “one-China” policy.
+  
+  -  Domestic legislation requires it to “provide Taiwan with arms of a defensive character” .(“向台灣提供防禦性武器”)
+  
+  - Also follows a policy of “strategic ambiguity”.(“戰略模糊”政策)
+  
+  - **Pelosi’s purpose**
+    
+    - For several reasons, personal and political.
+      
+      -  She may see the visit as part of her legacy.
+    
+    - The news of Ms Pelosi’s trip leaked.
+      
+      - military chiefs thought the trip was “not a good idea”.→ But China [denounced the visit](https://www.economist.com/china/2022/07/21/talk-of-nancy-pelosi-visiting-taiwan-angers-china) ever more loudly. To cancel the visit would be to yield to Chinese bullying.
+  
+  - Worries
+    
+    - American leaders worry that China might launch an invasion in the next few years.
+    
+    - Chinese rulers fear that Taiwan is slipping from their grip as it leans further towards independence.
+    
+    - Taiwanese leaders fret that America is distracted by the war in Ukraine and problems at home.
+
+> [China v Taiwan: explained - YouTube](https://www.youtube.com/watch?v=gZ7hGoUEGCM&t=22s&ab_channel=TheEconomist)
+
 2. China’s huge exercises around Taiwan were a rehearsal, not a signal, says Oriana Skylar Mastro
 
 > <https://www.economist.com/by-invitation/2022/08/10/chinas-huge-exercises-around-taiwan-were-a-rehearsal-not-a-signal-says-oriana-skylar-mastro>
@@ -104,4 +144,4 @@ Of the 24 members of the new Politburo of the Communist Party of China, 15 have 
 
 > [中国拟派专家到台北探视病重大熊猫“团团”，两岸关系可解冻？](https://www.voachinese.com/a/china-to-send-experts-to-taiwan-to-help-care-for-gravely-ill-giant-panda-20221028/6810297.html)
 
-1. Although Taiwan and China have political issues, they still cooperate on non-political issues, and their trade exchanges are also very ordinary. However, mostly in the capacity of civil society
+1. Although Taiwan and China have political issues, they still cooperate on non-political issues, and their trade exchanges are also very ordinary. However, mostly in the capacity of civil society.
