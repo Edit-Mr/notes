@@ -1,6 +1,6 @@
 ---
 
-title: "基本HTML語法整理"
+title: "HTML Form"
 date: 2022-10-31
 description: "HTML Form"
 categories: ["Web Design"]
