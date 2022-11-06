@@ -201,15 +201,15 @@ hidden 是用來當你想傳送一些值回遠端 server，但你不想或不需
 
 ```html
 <input type="image"
-       src="/media/examples/login-button.png"
+       src="https://em-tec.github.io/icons/EMprofile.png"
        alt="Login"
-       width="100" height="30">
-       ```
+       width="100" height="100">
+```
        
-       <input type="image"
-       src="/media/examples/login-button.png"
+<input type="image"
+       src="https://em-tec.github.io/icons/EMprofile.png"
        alt="Login"
-       width="100" height="30">
+       width="100" height="100">
 
 圖片送出按鈕還有一個特性是當送出表單時，會同時送出座標點 (coordinates) (x, y) 的額外資訊，表示使用者點擊了圖片中的哪個位置，座標軸是以圖片的左上角為 (0, 0)。送出的資料格式會像是 "x=52&y=55"，如果你有設定 name 名稱，例如 name="position"，則送出去的資料格式會像是 "position.x=52&position.y=55"。
 
@@ -347,6 +347,7 @@ type="date" 用來建立一個日期輸入欄位，日期的格式為 yyyy-mm-dd
 * step: 設定一個數字，用來控制日期元件一次跳動的幅度；或在送出表單之前，瀏覽器會對日期欄位做驗證，日期需要符合 step 設定的跳動區間
 
 例子：
+
 ```html
 <input type="date"
        value="2020-04-20"
@@ -378,7 +379,7 @@ type="time" 用來建立一個時間輸入欄位，時間的格式為 24 小時�
        step="5">
        ```
        
-       <input type="time"
+<input type="time"
        value="06:00"
        min="02:00"
        max="22:00"
@@ -400,7 +401,7 @@ type="time" 用來建立一個時間輸入欄位，時間的格式為 24 小時�
        max="1000">
        ```
        
-       <input type="number"
+<input type="number"
        step="10"
        min="0"
        max="1000">
