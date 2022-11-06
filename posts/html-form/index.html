@@ -1,6 +1,6 @@
-<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>HTML Form &#183; 毛哥EM的筆記 EM's Notes</title><meta name=description content="HTML Form"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="EM's Notes"><meta property="og:description" content="My notes for everyting"><meta property="og:url" content="https://edit-mr.github.io/notes/posts/html-form/"><meta property="og:site_name" content="EM's Notes"><meta property="og:image" content="https://edit-mr.github.io/notes"><meta name=twitter:card content="summary"><meta name=twitter:title content="EM's Notes"><meta name=twitter:description content="My notes for everyting"><meta name=twitter:site content="https://edit-mr.github.io/notes"><meta name=twitter:creator content><meta name=twitter:image content="https://edit-mr.github.io/notes"><link href=https://edit-mr.github.io/notes/css/katex.min.css rel=stylesheet><link href=https://edit-mr.github.io/notes/css/concated.min.css rel=stylesheet><script async src="https://www.googletagmanager.com/gtag/js?id=G-9R5PZG2VQG"></script>
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>HTML Form &#183; 毛哥EM的筆記 EM's Notes</title><meta name=description content="HTML表單"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="EM's Notes"><meta property="og:description" content="My notes for everyting"><meta property="og:url" content="https://edit-mr.github.io/notes/posts/html-form/"><meta property="og:site_name" content="EM's Notes"><meta property="og:image" content="https://edit-mr.github.io/notes"><meta name=twitter:card content="summary"><meta name=twitter:title content="EM's Notes"><meta name=twitter:description content="My notes for everyting"><meta name=twitter:site content="https://edit-mr.github.io/notes"><meta name=twitter:creator content><meta name=twitter:image content="https://edit-mr.github.io/notes"><link href=https://edit-mr.github.io/notes/css/katex.min.css rel=stylesheet><link href=https://edit-mr.github.io/notes/css/concated.min.css rel=stylesheet><script async src="https://www.googletagmanager.com/gtag/js?id=G-9R5PZG2VQG"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-9R5PZG2VQG",{anonymize_ip:!1})}</script></head><body class=single-body><nav class="nav-bar side-padding"><h1 class=nav-header><a href=https://edit-mr.github.io/notes class=nav-text>EM's Notes</a></h1><div class=hamburger-menu><input class=hamburger-menu-button type=checkbox onclick=hamburgerMenuPressed.call(this)><div class=hamburger-menu-icon><span></span>
-<span></span></div><ul id=menu class=hamburger-menu-overlay><li><a href=https://edit-mr.github.io/notes class=hamburger-menu-overlay-link>Home</a></li><li><a href=https://edit-mr.github.io/notes/about/ class=hamburger-menu-overlay-link>關於 About</a></li><li><a href=https://edit-mr.github.io/notes/categories/coding/ class=hamburger-menu-overlay-link>Coding</a></li><li><a href=https://edit-mr.github.io/notes/categories/debate/ class=hamburger-menu-overlay-link>Debate</a></li><li><a href=https://edit-mr.github.io/notes/categories/hugo/ class=hamburger-menu-overlay-link>Hugo</a></li><li><a href=https://edit-mr.github.io/notes/categories/web-design/ class=hamburger-menu-overlay-link>Web Design</a></li><li><a href=https://edit-mr.github.io/index.xml class=hamburger-menu-overlay-link>rss</a></li></ul></div></nav><main class="content side-text-padding"><article class="post dropcase"><header class=post-header><h1 class=post-title>HTML Form</h1><p class=post-date>Posted <time datetime=2022-10-31>Oct 31, 2022</time></p></header><p>HTML 表單 (form) 是用來讓使用者輸入資料，這些資料可以用來和使用者互動，例如表單內容填完後可以傳回遠端伺服器 (web server)，像常見的連絡表單。</p><h2 id=一個完整的-html-表單範例>一個完整的 HTML 表單範例</h2><pre tabindex=0><code>&lt;form action=&#34;/formprocess.php&#34; method=&#34;post&#34;&gt;
+<span></span></div><ul id=menu class=hamburger-menu-overlay><li><a href=https://edit-mr.github.io/notes class=hamburger-menu-overlay-link>Home</a></li><li><a href=https://edit-mr.github.io/notes/about/ class=hamburger-menu-overlay-link>關於 About</a></li><li><a href=https://edit-mr.github.io/notes/categories/coding/ class=hamburger-menu-overlay-link>Coding</a></li><li><a href=https://edit-mr.github.io/notes/categories/debate/ class=hamburger-menu-overlay-link>Debate</a></li><li><a href=https://edit-mr.github.io/notes/categories/hugo/ class=hamburger-menu-overlay-link>Hugo</a></li><li><a href=https://edit-mr.github.io/notes/categories/web-design/ class=hamburger-menu-overlay-link>Web Design</a></li></ul></div></nav><main class="content side-text-padding"><article class="post dropcase"><header class=post-header><h1 class=post-title>HTML Form</h1><p class=post-date>Posted <time datetime=2022-10-31>Oct 31, 2022</time></p></header><h2>Contents</h2><nav id=TableOfContents><ul><li><a href=#一個完整的-html-表單範例>一個完整的 HTML 表單範例</a></li><li><a href=#input>input</a><ul><li><a href=#input-標籤的屬性-attributes><code>&lt;input></code> 標籤的屬性 (attributes)</a></li><li><a href=#表單欄位驗證-pattern-validation---pattern-屬性>表單欄位驗證 (pattern validation) - pattern 屬性</a></li></ul></li><li><a href=#textarea>textarea</a></li><li><a href=#button>button</a></li></ul></nav><p>HTML 表單 (form) 是用來讓使用者輸入資料，這些資料可以用來和使用者互動，例如表單內容填完後可以傳回遠端伺服器 (web server)，像常見的連絡表單。</p><h2 id=一個完整的-html-表單範例>一個完整的 HTML 表單範例</h2><pre tabindex=0><code>&lt;form action=&#34;/formprocess.php&#34; method=&#34;post&#34;&gt;
 
     &lt;p&gt;Name:&lt;/p&gt;
     &lt;p&gt;&lt;input type=&#34;text&#34; name=&#34;name&#34; value=&#34;你的名字&#34;&gt;&lt;/p&gt;
@@ -19,63 +19,141 @@
     &lt;p&gt;&lt;input type=&#34;submit&#34; value=&#34;送出資料&#34;&gt;&lt;/p&gt;
 
 &lt;/form&gt;
-</code></pre><h2 id=input>input</h2><p>標籤的屬性 (attributes)
-name: 欄位名稱 的 name 屬性用來指定送出去的該筆資料要用什麼名稱，目的是讓遠端伺服器才能透過明確定義好的名稱去取出對應的欄位值。</p><p>value: 指定初始值 (default value)
-disabled: 將元件設定為禁用狀態
-readonly: 將元件設為唯獨不可更改內容的狀態</p><p>autocomplete: 是否啟用瀏覽器自動完成功能
-值有 on 和 off，預設是 on。</p><p>autofocus: 當頁面載入後，自動聚焦在此欄位上
-如果有設定 autofocus，當頁面載入後，瀏覽器會自動將畫面聚焦 (focus) 在該欄位上，但要注意，整個頁面所有的表單元件中只能有一個 autofocus 而已喔。</p><p>required: 指定為必填欄位
-當送出表單時，如果聲明為 required 的欄位內容沒有填寫，會被瀏覽器提醒必填。</p><p>輸入類型的 input 欄位還有這些屬性可以運用：</p><p>maxlength: 指定最多能輸入多少字
-minlength: 指定最少需要輸入多少字
-size: 一個數字指定欄位顯示寬度 (characters wide)
-text input 的 placeholder 屬性: 輸入的提示訊息</p><p>密碼輸入欄位
-密碼文字輸入欄位和 text 的差別是，使用者輸入的內容不會被明碼顯示在螢幕畫面中。</p><p>核取方塊
-核取方塊 (check box / tick box) 用來讓使用者勾選某個選項是否成立，可以再搭配 value 屬性 (預設值是 &ldquo;on&rdquo;) 來指定當使用者勾選此方塊時要傳送給遠端伺服器什麼值。</p><p>Subscribe to HTML newsletter? Subscribe to JavaScript newsletter?</p><p>當使用者勾選時，就會隨著表單送出像是 &ldquo;subscribe=newsletter&rdquo; 的資料；相反的，如果 checkbox 沒有被勾選，就不會有任何資料被送出。</p><p>對於不同的 checkbox 你可以用一樣的 name 也可以用不一樣，一樣的話，會送出像是 &ldquo;subscribe=html-newsletter&subscribe=js-newsletter&rdquo; 格式的資料。</p><p>選項按鈕
-radio (radio button) 是選項按鈕，用來處理表單中有多選一時的情況，搭配 value 屬性 (預設值是 &ldquo;on&rdquo;) 來指定當使用者選取此選項時要傳送給遠端伺服器什麼值。</p><p>同一組 radio button 的選項，需要都是一樣的 name。</p><p>請選擇你最喜歡的顏色： red green blue</p><p>checkbox 和 radio 的 checked 屬性: 預設勾選
-checked 可以將該 checkbox / radio 的初始狀態設定為已選取。</p><p>Subscribe to newsletter?</p><p>表單的送出按鈕 (submit button)
-當使用者點了 submit button 就會送出表單給遠端的伺服器，用 value 屬性可以設定按鈕名稱。</p><p>重設表單狀態
-reset 用來讓使用者點了可以重設表單內容回到初始狀態，而 value 屬性可以設定 reset 按鈕的名稱。</p><p>圖片按鈕可以搭配這些屬性使用：</p><p>src: 指定圖片位址
-alt: 指定當圖片下載失敗時的替代文字
-width: 指定圖片顯示寬度
-height: 指定圖片顯示高度</p><p>圖片送出按鈕還有一個特性是當送出表單時，會同時送出座標點 (coordinates) (x, y) 的額外資訊，表示使用者點擊了圖片中的哪個位置，座標軸是以圖片的左上角為 (0, 0)。送出的資料格式會像是 &ldquo;x=52&y=55&rdquo;，如果你有設定 name 名稱，例如 name=&ldquo;position&rdquo;，則送出去的資料格式會像是 &ldquo;position.x=52&position.y=55&rdquo;。</p><p>檔案上傳 (file upload)
-type=&ldquo;file&rdquo; 用來讓使用者可以從本機端選擇檔案上傳。</p><p>搭配 accept 屬性可以限制允許上傳的檔案類型 (file type)，可以用逗點分隔開多種允許類型，accept 可以設定的值有：</p><p>.檔案類型: 例如 .jpg, .pdf, .doc
-明確指定 MIME type: 例如 image/jpeg, image/png
-audio/<em>: 指任何聲音檔
-video/</em>: 指任何影片檔
-image/*: 指任何圖檔
-舉個例子：</p><p>搭配 multiple 屬性，一次可同時選多個檔案上傳：</p><p>搭配 capture 屬性，可以用來開啟使用手機的照相機鏡頭：</p><p>拍照上傳</p><p>拍影片上傳</p><p>用麥克風錄音上傳
-還可以指定要開啟手機的前鏡頭或後鏡頭，設定 capture 的屬性值：</p><p>user: 指定要開啟前鏡頭
-environment: 指定要開啟後鏡頭
-front (user) - 前鏡頭</p><p>back (environment) - 後鏡頭 表單按鈕
-button 通常用來搭配 JavaScript 來動態操作表單內容。</p><p>搜尋欄位
-搜尋的文字輸入框，和 type=&ldquo;text&rdquo; 主要的差異是欄位用途在語意上更明確，有些瀏覽器可能也會針對搜尋框顯示不同的樣式。</p><p>可以再搭配這些屬性使用：</p><p>max: 可以輸入的最晚日期
-min: 可以輸入的最早日期
-step: 設定一個數字，用來控制日期元件一次跳動的幅度；或在送出表單之前，瀏覽器會對日期欄位做驗證，日期需要符合 step 設定的跳動區間
-例子：</p><p></p><p>時間輸入欄位
-type=&ldquo;time&rdquo; 用來建立一個時間輸入欄位，時間的格式為 24 小時制的 hh:mm。</p><p>可以再搭配這些屬性使用：</p><p>max: 可以輸入的最晚時間
-min: 可以輸入的最早時間
-step: 設定一個數字，用來控制時間元件一次跳動的幅度；或在送出表單之前，瀏覽器會對時間欄位做驗證，時間需要符合 step 設定的跳動區間
-例子：</p><p></p><p>數字輸入欄位
-數字輸入欄位只允許輸入數字。</p><p>可以再搭配這些屬性使用：</p><p>max: 可以輸入的最大值
-min: 可以輸入的最小值
-step: 設定一個數字，用來控制數字元件一次跳動的幅度；或在送出表單之前，瀏覽器會對欄位做驗證，數字需要符合 step 設定的跳動區間
-例子：</p><p></p><p>number 欄位在預設上，只能輸入整數，如果你想要能夠輸入小數點需要去調整 step 的屬性值，例如設定 step=&ldquo;0.1&rdquo; 表示能輸入到小數點第一位；step=&ldquo;0.01&rdquo; 表示能輸入到小數點第二位，依此類推；step=&ldquo;any&rdquo; 則是用來表示可以輸入任何數字。</p><p>數字範圍滑動選取欄位
-type=&ldquo;range&rdquo; 可以讓使用者用滑動的方式在一個數字區間內選擇出一個值，可以應用在對數字精準度要求不高的場景，像是調整音量大小。</p><p>可以再搭配這些屬性使用：</p><p>max: 範圍中可選的最大值
-min: 範圍中可選的最小值
-step: 設定一個數字，用來控制元件數字一次跳動的幅度；或在送出表單之前，瀏覽器會對欄位做驗證，數字需要符合 step 設定的跳動區間
-例子：</p><p>顏色選擇器 (color picker)
-type=&ldquo;color&rdquo; 用來讓使用者挑選顏色，顏色的格式為 #rrggbb。</p><p>範例：</p><p>表單欄位驗證 (pattern validation) - pattern 屬性
-text, date, search, url, tel, email 和 password 等輸入欄位可以利用 pattern 屬性搭配正規表達式 (regular expression) 來做表單欄位驗證。</p><p>語法：</p><h2 id=textarea>textarea</h2><p>textarea 使用範例：</p><h2 id=button>button</h2><p>標籤 (tag) 是用來建立一個按鈕，而按鈕文字是放在 之間。</p><p>有下面這些屬性 (attributes)：</p><p>name: 按鈕名稱
-type: 按鈕的形式，有三種選項：
-submit: 表單送出按鈕，預設值
-reset: 表單內容重置按鈕
-button: 沒任何特殊功能的一般按鈕，通常配合 JavaScript 使用
-value: 當 type=&ldquo;submit&rdquo; 時，隨表單送出給遠端 server 的值
-disabled: 禁用此按鈕
-使用範例：</p><p>Push Me</p></article></main><nav class="end-nav side-padding"><a ontouchstart=cardPressed.call(this) ontouchend=cardReleased.call(this) ontouchmove=cardReleased.call(this) href=https://edit-mr.github.io/notes/posts/basic-html/ class="card blog-card bc-next" rel=bookmark><article class=card-body><h2 class=card-title>基本HTML語法整理</h2><p class=card-text>HTML語法整理! 3分鐘快速弄懂常用語法！</p><div class="card-subtext muted-text"><p>Posted <time datetime=2022-10-28>Oct 28, 2022</time></p><p>#Web Design</p></div></article></a></nav><footer class=side-padding style=background-image:url(https://edit-mr.github.io/notes/img/home-blob-flip.svg)><a href=https://edit-mr.github.io/notes class=footer-link><img class=footer-icon src=https://edit-mr.github.io/notes/icons/home.svg alt=Home></a>
+</code></pre><h2 id=input>input</h2><h3 id=input-標籤的屬性-attributes><code>&lt;input></code> 標籤的屬性 (attributes)</h3><h4 id=name-欄位名稱>name: 欄位名稱</h4><p>的 name 屬性用來指定送出去的該筆資料要用什麼名稱，目的是讓遠端伺服器才能透過明確定義好的名稱去取出對應的欄位值。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input name=<span style=color:#009c00>&#34;myfield&#34;</span>&gt;
+</span></span></code></pre></div><p>可以想像當表單送出時，這個欄位會以類似 &ldquo;myfield=輸入內容&rdquo; 的形式傳給遠端伺服器。</p><h4 id=value-指定初始值-default-value>value: 指定初始值 (default value)</h4><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input value=<span style=color:#009c00>&#34;我的初始值&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=disabled-將元件設定為禁用狀態>disabled: 將元件設定為禁用狀態</h4><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input disabled&gt;
+</span></span></code></pre></div><h4 id=readonly-將元件設為唯獨不可更改內容的狀態>readonly: 將元件設為唯獨不可更改內容的狀態</h4><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input value=<span style=color:#009c00>&#34;點我看看可否編輯&#34;</span> readonly&gt;
+</span></span></code></pre></div><h4 id=autocomplete-是否啟用瀏覽器自動完成功能>autocomplete: 是否啟用瀏覽器自動完成功能</h4><p>值有 on 和 off，預設是 on。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input autocomplete=<span style=color:#009c00>&#34;off&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=autofocus-當頁面載入後自動聚焦在此欄位上>autofocus: 當頁面載入後，自動聚焦在此欄位上</h4><p>如果有設定 autofocus，當頁面載入後，瀏覽器會自動將畫面聚焦 (focus) 在該欄位上，但要注意，整個頁面所有的表單元件中只能有一個 autofocus 而已喔。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input autofocus&gt;
+</span></span></code></pre></div><h4 id=required-指定為必填欄位>required: 指定為必填欄位</h4><p>當送出表單時，如果聲明為 required 的欄位內容沒有填寫，會被瀏覽器提醒必填。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input required&gt;
+</span></span></code></pre></div><h4 id=input-的-type-屬性-建立不同類型的表單元件><code>&lt;input></code> 的 type 屬性: 建立不同類型的表單元件</h4><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;text&#34;</span>&gt;
+</span></span></code></pre></div><p><code>&lt;input></code> 的 type 預設上就是 text，所以也可以省略不寫，沒 type 時其實就是 text：</p><p>輸入類型的 input 欄位還有這些屬性可以運用：</p><ul><li>maxlength: 指定最多能輸入多少字</li><li>minlength: 指定最少需要輸入多少字</li><li>size: 一個數字指定欄位顯示寬度 (characters wide)</li><li>text input 的 placeholder 屬性: 輸入的提示訊息</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input placeholder=<span style=color:#009c00>&#34;請輸入帳號&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typepassword-><code>&lt;input type="password"></code></h4><p>密碼輸入欄位</p><p>密碼文字輸入欄位和 text 的差別是，使用者輸入的內容不會被明碼顯示在螢幕畫面中。</p><h4 id=input-typecheckbox-核取方塊><code>&lt;input type="checkbox"></code> 核取方塊</h4><p>核取方塊 (check box / tick box) 用來讓使用者勾選某個選項是否成立，可以再搭配 value 屬性 (預設值是 &ldquo;on&rdquo;) 來指定當使用者勾選此方塊時要傳送給遠端伺服器什麼值。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;checkbox&#34;</span> name=<span style=color:#009c00>&#34;subscribe&#34;</span> value=<span style=color:#009c00>&#34;html-newsletter&#34;</span>&gt; Subscribe to HTML newsletter?&lt;br&gt;
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;checkbox&#34;</span> name=<span style=color:#009c00>&#34;subscribe&#34;</span> value=<span style=color:#009c00>&#34;js-newsletter&#34;</span>&gt; Subscribe to JavaScript newsletter?
+</span></span></code></pre></div><p>Subscribe to HTML newsletter? Subscribe to JavaScript newsletter?</p><p>當使用者勾選時，就會隨著表單送出像是 &ldquo;subscribe=newsletter&rdquo; 的資料；相反的，如果 checkbox 沒有被勾選，就不會有任何資料被送出。</p><p>對於不同的 checkbox 你可以用一樣的 name 也可以用不一樣，一樣的話，會送出像是 &ldquo;subscribe=html-newsletter&subscribe=js-newsletter&rdquo; 格式的資料。</p><h4 id=input-typeradio-選項按鈕><code>&lt;input type="radio"></code> 選項按鈕</h4><p>radio (radio button) 是選項按鈕，用來處理表單中有多選一時的情況，搭配 value 屬性 (預設值是 &ldquo;on&rdquo;) 來指定當使用者選取此選項時要傳送給遠端伺服器什麼值。</p><p>同一組 radio button 的選項，需要都是一樣的 name。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>請選擇你最喜歡的顏色：&lt;br&gt;
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;radio&#34;</span> name=<span style=color:#009c00>&#34;color&#34;</span> value=<span style=color:#009c00>&#34;red&#34;</span>&gt; red&lt;br&gt;
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;radio&#34;</span> name=<span style=color:#009c00>&#34;color&#34;</span> value=<span style=color:#009c00>&#34;green&#34;</span>&gt; green&lt;br&gt;
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;radio&#34;</span> name=<span style=color:#009c00>&#34;color&#34;</span> value=<span style=color:#009c00>&#34;blue&#34;</span>&gt; blue
+</span></span></code></pre></div><p>請選擇你最喜歡的顏色： red green blue</p><p>checkbox 和 radio 的 checked 屬性: 預設勾選
+checked 可以將該 checkbox / radio 的初始狀態設定為已選取。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;checkbox&#34;</span> checked&gt; Subscribe to newsletter?
+</span></span></code></pre></div><p>Subscribe to newsletter?</p><h4 id=input-typesubmit-表單的送出按鈕-submit-button><code>&lt;input type="submit"></code> 表單的送出按鈕 (submit button)</h4><p>當使用者點了 submit button 就會送出表單給遠端的伺服器，用 value 屬性可以設定按鈕名稱。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;submit&#34;</span> value=<span style=color:#009c00>&#34;Send Request&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typereset-重設表單狀態><code>&lt;input type="reset"></code> 重設表單狀態</h4><p>reset 用來讓使用者點了可以重設表單內容回到初始狀態，而 value 屬性可以設定 reset 按鈕的名稱。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;reset&#34;</span> value=<span style=color:#009c00>&#34;Reset&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typehidden-隱藏資料欄位><code>&lt;input type="hidden"></code> 隱藏資料欄位</h4><p>hidden 是用來當你想傳送一些值回遠端 server，但你不想或不需要讓使用者看見這些內容。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input name=<span style=color:#009c00>&#34;itemid&#34;</span> type=<span style=color:#009c00>&#34;hidden&#34;</span> value=<span style=color:#009c00>&#34;fwoxla&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typeimage-圖片送出按鈕><code>&lt;input type="image"></code> 圖片送出按鈕</h4><p>送出按鈕除了可以用前面提到的文字按鈕，也可以是圖片按鈕。</p><p>圖片按鈕可以搭配這些屬性使用：</p><ul><li>src: 指定圖片位址</li><li>alt: 指定當圖片下載失敗時的替代文字</li><li>width: 指定圖片顯示寬度</li><li>height: 指定圖片顯示高度</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;image&#34;</span>
+</span></span><span style=display:flex><span>       src=<span style=color:#009c00>&#34;/media/examples/login-button.png&#34;</span>
+</span></span><span style=display:flex><span>       alt=<span style=color:#009c00>&#34;Login&#34;</span>
+</span></span><span style=display:flex><span>       width=<span style=color:#009c00>&#34;100&#34;</span> height=<span style=color:#009c00>&#34;30&#34;</span>&gt;
+</span></span><span style=display:flex><span>       ```
+</span></span><span style=display:flex><span>       
+</span></span><span style=display:flex><span>       &lt;input type=<span style=color:#009c00>&#34;image&#34;</span>
+</span></span><span style=display:flex><span>       src=<span style=color:#009c00>&#34;/media/examples/login-button.png&#34;</span>
+</span></span><span style=display:flex><span>       alt=<span style=color:#009c00>&#34;Login&#34;</span>
+</span></span><span style=display:flex><span>       width=<span style=color:#009c00>&#34;100&#34;</span> height=<span style=color:#009c00>&#34;30&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>圖片送出按鈕還有一個特性是當送出表單時，會同時送出座標點 (coordinates) (x, y) 的額外資訊，表示使用者點擊了圖片中的哪個位置，座標軸是以圖片的左上角為 (0, 0)。送出的資料格式會像是 &#34;x=52&amp;y=55&#34;，如果你有設定 name 名稱，例如 name=&#34;position&#34;，則送出去的資料格式會像是 &#34;position.x=52&amp;position.y=55&#34;。
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#### `&lt;input type=<span style=color:#009c00>&#34;file&#34;</span>&gt;` 檔案上傳 (file upload)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>type=&#34;file&#34; 用來讓使用者可以從本機端選擇檔案上傳。
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>搭配 accept 屬性可以限制允許上傳的檔案類型 (file type)，可以用逗點分隔開多種允許類型，accept 可以設定的值有：
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>.檔案類型: 例如 .jpg, .pdf, .doc
+</span></span><span style=display:flex><span>明確指定 MIME type: 例如 image/jpeg, image/png
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>* audio/*: 指任何聲音檔
+</span></span><span style=display:flex><span>* video/*: 指任何影片檔
+</span></span><span style=display:flex><span>* image/*: 指任何圖檔
+</span></span><span style=display:flex><span>舉個例子：
+</span></span><span style=display:flex><span>```html
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;file&#34;</span> accept=<span style=color:#009c00>&#34;image/*,.pdf&#34;</span>&gt;
+</span></span></code></pre></div><p>搭配 multiple 屬性，一次可同時選多個檔案上傳：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;file&#34;</span> accept=<span style=color:#009c00>&#34;image/*,.pdf&#34;</span> multiple&gt;
+</span></span></code></pre></div><p>搭配 capture 屬性，可以用來開啟使用手機的照相機鏡頭：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;file&#34;</span> capture&gt;
+</span></span></code></pre></div><p>再搭配 accept 使用會有不同效果：</p><p>拍照上傳</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;file&#34;</span> accept=<span style=color:#009c00>&#34;image/*&#34;</span> capture&gt;
+</span></span></code></pre></div><p>拍影片上傳</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;file&#34;</span> accept=<span style=color:#009c00>&#34;video/*&#34;</span> capture&gt;
+</span></span></code></pre></div><ul><li>user: 指定要開啟前鏡頭</li><li>environment: 指定要開啟後鏡頭</li><li>front (user) - 前鏡頭</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;file&#34;</span> accept=<span style=color:#009c00>&#34;video/*&#34;</span> capture=<span style=color:#009c00>&#34;user&#34;</span>&gt;
+</span></span></code></pre></div><ul><li>back (environment) - 後鏡頭</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;file&#34;</span> accept=<span style=color:#009c00>&#34;video/*&#34;</span> capture=<span style=color:#009c00>&#34;environment&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typebutton-表單按鈕><code>&lt;input type="button"></code> 表單按鈕</h4><p>button 通常用來搭配 JavaScript 來動態操作表單內容。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;button&#34;</span> value=<span style=color:#009c00>&#34;Click Me&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typesearch-搜尋欄位><code>&lt;input type="search"></code> 搜尋欄位</h4><p>搜尋的文字輸入框，和 type=&ldquo;text&rdquo; 主要的差異是欄位用途在語意上更明確，有些瀏覽器可能也會針對搜尋框顯示不同的樣式。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;search&#34;</span> name=<span style=color:#009c00>&#34;q&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typetel-電話號碼輸入欄位><code>&lt;input type="tel"></code> 電話號碼輸入欄位</h4><p>type=&ldquo;tel&rdquo; 和 type=&ldquo;text&rdquo; 主要的差異是欄位用途在語意上更明確，且在特定的裝置像是手機上會顯示針對電話號碼輸入的界面。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;tel&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typeurl-網址輸入欄位><code>&lt;input type="url"></code> 網址輸入欄位</h4><p>type=&ldquo;url&rdquo; 和 type=&ldquo;text&rdquo; 主要的差異是欄位用途在語意上更明確，且在送出表單之前，有支援的瀏覽器也會自動驗證 (validate) 使用者輸入的內容是不是合法的 URL。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;url&#34;</span>&gt;
+</span></span></code></pre></div><p>電子郵件輸入欄位
+type=&ldquo;email&rdquo; 和 type=&ldquo;text&rdquo; 主要的差異是欄位用途在語意上更明確，且在送出表單之前，有支援的瀏覽器也會自動驗證 (validate) 使用者輸入的內容是不是合法的 email。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;email&#34;</span>&gt;
+</span></span></code></pre></div><p>multiple 屬性用來聲明此欄位可以用逗號 , 分開輸入多組 email：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;email&#34;</span> multiple&gt;
+</span></span></code></pre></div><h4 id=input-typedate-日期輸入欄位><code>&lt;input type="date"></code> 日期輸入欄位</h4><p>type=&ldquo;date&rdquo; 用來建立一個日期輸入欄位，日期的格式為 yyyy-mm-dd。</p><p>可以再搭配這些屬性使用：</p><ul><li>max: 可以輸入的最晚日期</li><li>min: 可以輸入的最早日期</li><li>step: 設定一個數字，用來控制日期元件一次跳動的幅度；或在送出表單之前，瀏覽器會對日期欄位做驗證，日期需要符合 step 設定的跳動區間</li></ul><p>例子：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;date&#34;</span>
+</span></span><span style=display:flex><span>       value=<span style=color:#009c00>&#34;2020-04-20&#34;</span>
+</span></span><span style=display:flex><span>       min=<span style=color:#009c00>&#34;2020-04-01&#34;</span>
+</span></span><span style=display:flex><span>       max=<span style=color:#009c00>&#34;2022-04-30&#34;</span>
+</span></span><span style=display:flex><span>       step=<span style=color:#009c00>&#34;5&#34;</span>&gt;
+</span></span></code></pre></div><p></p><h4 id=input-typetime-時間輸入欄位><code>&lt;input type="time"></code> 時間輸入欄位</h4><p>type=&ldquo;time&rdquo; 用來建立一個時間輸入欄位，時間的格式為 24 小時制的 hh:mm。</p><p>可以再搭配這些屬性使用：</p><ul><li>max: 可以輸入的最晚時間</li><li>min: 可以輸入的最早時間</li><li>step: 設定一個數字，用來控制時間元件一次跳動的幅度；或在送出表單之前，瀏覽器會對時間欄位做驗證，時間需要符合 step 設定的跳動區間
+例子：</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;time&#34;</span>
+</span></span><span style=display:flex><span>       value=<span style=color:#009c00>&#34;06:00&#34;</span>
+</span></span><span style=display:flex><span>       min=<span style=color:#009c00>&#34;02:00&#34;</span>
+</span></span><span style=display:flex><span>       max=<span style=color:#009c00>&#34;22:00&#34;</span>
+</span></span><span style=display:flex><span>       step=<span style=color:#009c00>&#34;5&#34;</span>&gt;
+</span></span><span style=display:flex><span>       ```
+</span></span><span style=display:flex><span>       
+</span></span><span style=display:flex><span>       &lt;input type=<span style=color:#009c00>&#34;time&#34;</span>
+</span></span><span style=display:flex><span>       value=<span style=color:#009c00>&#34;06:00&#34;</span>
+</span></span><span style=display:flex><span>       min=<span style=color:#009c00>&#34;02:00&#34;</span>
+</span></span><span style=display:flex><span>       max=<span style=color:#009c00>&#34;22:00&#34;</span>
+</span></span><span style=display:flex><span>       step=<span style=color:#009c00>&#34;5&#34;</span>&gt;
+</span></span><span style=display:flex><span>       
+</span></span><span style=display:flex><span>#### `&lt;input type=<span style=color:#009c00>&#34;number&#34;</span>&gt;` 數字輸入欄位
+</span></span><span style=display:flex><span>數字輸入欄位只允許輸入數字。
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>可以再搭配這些屬性使用：
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>* max: 可以輸入的最大值
+</span></span><span style=display:flex><span>* min: 可以輸入的最小值
+</span></span><span style=display:flex><span>* step: 設定一個數字，用來控制數字元件一次跳動的幅度；或在送出表單之前，瀏覽器會對欄位做驗證，數字需要符合 step 設定的跳動區間
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>```html
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;number&#34;</span>
+</span></span><span style=display:flex><span>       step=<span style=color:#009c00>&#34;10&#34;</span>
+</span></span><span style=display:flex><span>       min=<span style=color:#009c00>&#34;0&#34;</span>
+</span></span><span style=display:flex><span>       max=<span style=color:#009c00>&#34;1000&#34;</span>&gt;
+</span></span><span style=display:flex><span>       ```
+</span></span><span style=display:flex><span>       
+</span></span><span style=display:flex><span>       &lt;input type=<span style=color:#009c00>&#34;number&#34;</span>
+</span></span><span style=display:flex><span>       step=<span style=color:#009c00>&#34;10&#34;</span>
+</span></span><span style=display:flex><span>       min=<span style=color:#009c00>&#34;0&#34;</span>
+</span></span><span style=display:flex><span>       max=<span style=color:#009c00>&#34;1000&#34;</span>&gt;
+</span></span><span style=display:flex><span>       
+</span></span><span style=display:flex><span>number 欄位在預設上，只能輸入整數，如果你想要能夠輸入小數點需要去調整 step 的屬性值，例如設定 step=&#34;0.1&#34; 表示能輸入到小數點第一位；step=&#34;0.01&#34; 表示能輸入到小數點第二位，依此類推；step=&#34;any&#34; 則是用來表示可以輸入任何數字。
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>#### `&lt;input type=<span style=color:#009c00>&#34;range&#34;</span>&gt;` 數字範圍滑動選取欄位
+</span></span><span style=display:flex><span>type=&#34;range&#34; 可以讓使用者用滑動的方式在一個數字區間內選擇出一個值，可以應用在對數字精準度要求不高的場景，像是調整音量大小。
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>可以再搭配這些屬性使用：
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>* max: 範圍中可選的最大值
+</span></span><span style=display:flex><span>* min: 範圍中可選的最小值
+</span></span><span style=display:flex><span>* step: 設定一個數字，用來控制元件數字一次跳動的幅度；或在送出表單之前，瀏覽器會對欄位做驗證，數字需要符合 step 設定的跳動區間
+</span></span><span style=display:flex><span>```html
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;range&#34;</span> min=<span style=color:#009c00>&#34;-10&#34;</span> max=<span style=color:#009c00>&#34;10&#34;</span>&gt;
+</span></span></code></pre></div><h4 id=input-typecolor-顏色選擇器-color-picker><code>&lt;input type="color"></code> 顏色選擇器 (color picker)</h4><p>type=&ldquo;color&rdquo; 用來讓使用者挑選顏色，顏色的格式為 #rrggbb。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;color&#34;</span> value=<span style=color:#009c00>&#34;#ff0000&#34;</span>&gt;
+</span></span></code></pre></div><h3 id=表單欄位驗證-pattern-validation---pattern-屬性>表單欄位驗證 (pattern validation) - pattern 屬性</h3><p>text, date, search, url, tel, email 和 password 等輸入欄位可以利用 pattern 屬性搭配正規表達式 (regular expression) 來做表單欄位驗證。</p><p>語法：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input pattern=<span style=color:#009c00>&#34;正規表達式&#34;</span>&gt;
+</span></span></code></pre></div><p>範例：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;text&#34;</span> pattern=<span style=color:#009c00>&#34;[a-z]{4,8}&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;time&#34;</span> pattern=<span style=color:#009c00>&#34;[0-9]{2}:[0-9]{2}&#34;</span>&gt;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>&lt;input type=<span style=color:#009c00>&#34;email&#34;</span> pattern=<span style=color:#009c00>&#34;.+@beststartupever.com&#34;</span>&gt;
+</span></span></code></pre></div><p>如果使用者輸入的內容不符合 pattern，在表單送出去之前就會被瀏覽器驗證錯誤而擋下。</p><h2 id=textarea>textarea</h2><p><code>&lt;textarea></code> 可以用來在表單 (form) 中，建立一個可以輸入多行文字的輸入框 (multi-line textbox)。</p><p><code>&lt;textarea></code> 標籤上有這些屬性 (attributes)：</p><ul><li>name: 聲明欄位名稱</li><li>rows: 一個數字，設定輸入框的高度是幾行文字 (lines)，預設是 2</li><li>cols: 一個數字，設定輸入框的寬度是多少文字 (characters)，預設是 20</li><li>maxlength: 一個數字，限定輸入的文字長度上限是幾個字</li><li>minlength: 一個數字，限定輸入的文字長度最少是幾個字</li><li>placeholder: 輸入欄位中的提示訊息</li><li>disabled: 將欄位設定為禁用的狀態，是一個布林 (boolean) 屬性</li><li>readonly: 將欄位設定為唯讀不可編輯的狀態，是一個布林 (boolean) 屬性</li><li>required: 將欄位設定為必填，是一個布林 (boolean) 屬性
+如果要在 textarea 中設定預設文字，不是像 <code>&lt;input></code> 一樣用 value 屬性喔，是直接將文字放在 <code>&lt;textarea></code>內容<code>&lt;/textarea></code> 標籤之間，而內容文字的換行是使用一般的文字換行符號 <code>\n</code>，不是用 <code>&lt;br></code> 喔。</li></ul><p>textarea 使用範例：</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;textarea name=<span style=color:#009c00>&#34;mytext&#34;</span>
+</span></span><span style=display:flex><span>          rows=<span style=color:#009c00>&#34;6&#34;</span>
+</span></span><span style=display:flex><span>          cols=<span style=color:#009c00>&#34;40&#34;</span>
+</span></span><span style=display:flex><span>          required&gt;
+</span></span><span style=display:flex><span>我是...
+</span></span><span style=display:flex><span>多行....
+</span></span><span style=display:flex><span>輸入框....
+</span></span><span style=display:flex><span>&lt;/textarea&gt;
+</span></span></code></pre></div><h2 id=button>button</h2><p><code>&lt;button></code> 標籤 (tag) 是用來建立一個按鈕，而按鈕文字是放在 <code>&lt;button>&lt;/button></code> 之間。</p><p><code>&lt;button></code> 有下面這些屬性 (attributes)：</p><ul><li>name: 按鈕名稱</li><li>type: 按鈕的形式，有三種選項：</li><li>submit: 表單送出按鈕，預設值</li><li>reset: 表單內容重置按鈕</li><li>button: 沒任何特殊功能的一般按鈕，通常配合 JavaScript 使用</li><li>value: 當 type=&ldquo;submit&rdquo; 時，隨表單送出給遠端 server 的值</li><li>disabled: 禁用此按鈕
+使用範例：</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;button type=<span style=color:#009c00>&#34;button&#34;</span>&gt;Push Me&lt;/button&gt;
+</span></span></code></pre></div><p>Push Me</p></article></main><nav class="end-nav side-padding"><a ontouchstart=cardPressed.call(this) ontouchend=cardReleased.call(this) ontouchmove=cardReleased.call(this) href=https://edit-mr.github.io/notes/posts/basic-html/ class="card blog-card bc-next" rel=bookmark><article class=card-body><h2 class=card-title>基本HTML語法整理</h2><p class=card-text>HTML語法整理! 3分鐘快速弄懂常用語法！</p><div class="card-subtext muted-text"><p>Posted <time datetime=2022-10-28>Oct 28, 2022</time></p><p>#Web Design</p></div></article></a></nav><footer class=side-padding style=background-image:url(https://edit-mr.github.io/notes/img/home-blob-flip.svg)><a href=https://edit-mr.github.io/notes class=footer-link><img class=footer-icon src=https://edit-mr.github.io/notes/icons/home.svg alt=Home></a>
 <a href=https://github.com/Edit-Mr class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/github.svg alt=GitHub></a>
 <a href=https://www.instagram.com/elvisdragonmao/ class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/instagram.svg alt=Instagram></a>
-<a href=https://edit-mr.github.io/index.xml class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/rss.svg alt=RSS></a>
 <a href=https://www.youtube.com/channel/UCiXuSx3IuiYI87dHOhVxC6A class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/youtube.svg alt=Youtube></a></footer><script defer src=https://edit-mr.github.io/notes/js/katex.min.js></script>
 <script defer src=https://edit-mr.github.io/notes/js/auto-render.min.js onload=renderMathInElement(document.body)></script>
 <script src=https://edit-mr.github.io/notes/js/core.min.js></script></body></html>
