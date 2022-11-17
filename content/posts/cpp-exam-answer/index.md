@@ -19,6 +19,9 @@ draft: true
 
 A:3
 
+帶入  val=3/2+4/3+5/3; 記得先乘除後加減，且都是int只會算出整數  
+ var=1+1+1=3
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -34,6 +37,8 @@ int main(){
 ## 輸入8，輸出為何?
 
 A:14
+
+`pow(a,b)`是a的b次方。8*8=64大於50所以是要輸出8+2\*3=14
 
 ```c++
 #include<iostream>
@@ -51,8 +56,13 @@ int main(){
     return 0;
 }  
 ```
+
 ## 輸入8 7，輸出為何?
+
 A:7
+
+if裡面是一個交換，如果a>b就交換。8>7所以原本的a從8換成7。
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -68,8 +78,17 @@ int main(){
     return 0;
 }  
 ```
+
 ## 輸入10，輸出為何?
+
 A:16
+
+10>0所以count會變成11
+
+接著10不大於10也不大於11所以count會變成14
+
+最後count是14所以會改成16
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -104,8 +123,11 @@ int main(){
     return 0;
 }  
 ```
+
 ## 輸入31 69，輸出為何?
+
 A:1000
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -119,8 +141,11 @@ int main(){
     return 0;
 }
 ```
+
 ## 輸入12，輸出為何?
+
 A:144
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -136,8 +161,11 @@ int main(){
     return 0;
 }
 ```
+
 ## 輸入100，輸出為何?
+
 A:100
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -153,11 +181,13 @@ int main(){
     return 0;
 }
 ```
+
 ## 輸入9，輸出為何?
 
 (註：當n>1時,將會一直執行第7~13行程式碼)
 
 A:19
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -177,8 +207,11 @@ int main(){
     return 0;
 }  
 ```
+
 ## 輸入20，輸出為何?
+
 A:210
+
 ```c++
 #include<iostream>
 using namespace std;
@@ -194,8 +227,11 @@ int main(){
     return 0;
 }  
 ```
+
 ## 輸入13，輸出為何?
+
 A:20
+
 ```c++
 #include<iostream>
 using namespace std;
