@@ -1,5 +1,7 @@
 # 2AC
 
+[![hackmd-github-sync-badge](https://hackmd.io/6SeP3-aoROOmqjgehLssvw/badge)](https://hackmd.io/6SeP3-aoROOmqjgehLssvw)
+
 :::info
 Resolved: The Taiwanese government should reinstate mandatory one-year military conscription.
 :::
@@ -8,7 +10,11 @@ Good afternoon, honorable judges and fellow debaters. The affirmative would like
 
 ## Increase budget
 
-Accroding our budget of military this year ,our defense spending per soldier,defense expenditure per capita and defense spending as a percentage of GDP are all lower than other countries.Alothough the government announces defense spending to rise to 2.4% of GDP next year.It still not enough.Take Republic of Korea for an example,their  total population is twice as big as ours,but their
+Accroding our budget of military this year, our defense spending per soldier,defense expenditure per capital and defense spending as a percentage of GDP are all lower than other countries. Accroding to the government announces defense spending to rise to 2.4% of GDP next year.Obviously it still not enough. Take Republic of Korea for an example,their  total population is twice as big as ours,but their the above three data are higher than ours.
+
+>為什麼其他國的預算比我們高
+
+The benefit for soldiers in Republic of Korea is also better than ours.For instance,their soldier can get discount for buying social housing .They can also get product in some manner with duty free.And their immediate family can 
 
 > [source:行政院主計總處 - 中央政府預算簡介及總覽](https://www.dgbas.gov.tw/ct.asp?xItem=26269&CtNode=5389&mp=1)
 
@@ -22,10 +28,13 @@ Accroding our budget of military this year ,our defense spending per soldier,def
 | -------------- | ------ | ------ | ------ | ------- | ------- | ------ |
 | 國防開支佔 GDP 的百分比 | 5.2    | 3.0    | 1.3    | 3.6     | 1.0     | 2.6    |
 | 人均國防開支         | 1,918  | 305    | 139    | 2,219   | 396     | 779    |
-| 每名士兵的國防開支      | 98,195 | 47,982 | 94,985 | 534,860 | 200,902 | 72,788 |
+| 人均國防開支      | 98,195 | 47,982 | 94,985 | 534,860 | 200,902 | 72,788 |
 
 출처:    영국 국제전략문제연구소(IISS)「The Military Balance」 2021.2 
 주석:    * 러시아, 중국 : 예산외자금(extra-budgetary funds) 미포함
+
+我國https://www.merit-times.com/NewsPage.aspx?unid=378452
+
 About Korea millitary ＱＡ  
 > 1.軍人福利基本法規定的供給住宅與互助會開發的供給住宅有什麼區別？(2008.04.24)
 > 
@@ -68,7 +77,7 @@ Also, we will give consolation money to the families of deceased soldiers and ho
 
 ## Training System
 
-Many people do not want to join the army because the training is not arranged correctly. Many *people* complained that they spent more time in the office than training. Improved scheduling of training allows for good use of time.
+Many people do not want to join the army because the training is not arranged correctly. Many *people* complained that they spent more time in the office than training. Improved scheduling of training allows for good use of time.For instance, we can 
 
 ### Every soldier can be wisely used
 
@@ -119,3 +128,9 @@ We can send willing soldiers to battlefields and let them learn from experience.
 ### Teach their family
 
 Although only men are currently obliged to do military service, they can teach their families how to fight or use weapons at home.
+
+contention 2: Soft Power
+
+The national status is constantly changing. So we need to keep our arm force in a stable state. Nevertheless, we can consolidate our soft power. The economic status of Taiwan is vital and indispensable in the world. Take the economic aspect as an example. There is an essential microchip industry in Taiwan, such as TSMC. According to the slide in Earning Calls on Oct. 2022 of TSMC, the net revenue has been increasing past two years. Furthermore, according to a report in Business Weekly, Taiwan offers 92% production of advanced microchips and semiconductors around the globe. Under various pressure from China, TSMC  has enormous global influence in Taiwan and can serve us with diplomatic and strategic value.
+
+Once China invades Taiwan, according to the [Silicon]([https://](https://www.shihang.org/zh/news/press-release/2022/10/04/russian-invasion-of-ukraine-impedes-post-pandemic-economic-recovery-in-emerging-europe-and-central-asia)) technology powering business in the UK, the most-advanced chip factory in the world would be rendered "not operable", which will impact not only Taiwan's economic impact but also the whole wide world. According to The World Bank, Ukraine's economy is projected to contract by 35% this year since Russia's invasion of Ukraine. However, economic activity is scarred by the destruction of productive capacity, damage to agricultural land, and reduced labor supply as more than 14 million people are estimated to have been displaced. According to recent World Bank estimates, recovery and reconstruction needs across social, productive, and infrastructure sectors total at least $349 billion, which is over 1.5 times the size of Ukraine's pre-war economy in 2021. While global prices for oil, gas, and coal have risen since early 2021, they skyrocketed after Russia invaded Ukraine. This crisis has implications for consumers and governments – constraining fiscal affordability, firm productivity, and household welfare. 
