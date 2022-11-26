@@ -68,8 +68,7 @@
 </span></span><span style=display:flex><span>    cout&lt;&lt;count;
 </span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
 </span></span><span style=display:flex><span>}  
-</span></span></code></pre></div><h2 id=輸入31-69輸出為何>輸入31 69，輸出為何?</h2><p>A:1000</p><p>經過一番輸入a=31,b=69,i=a=31,sum=0</p><p>迴圈會從3加到69，公差為2。
-\frac{(31+69)[(69-31)\div2+1]}{2}=1000</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></code></pre></div><h2 id=輸入31-69輸出為何>輸入31 69，輸出為何?</h2><p>A:1000</p><p>經過一番輸入a=31,b=69,i=a=31,sum=0</p><p>迴圈會從3加到69，公差為2。</p>\[\frac{(31+69)[(69-31)\div2+1]}{2}=1000 \]<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
 </span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
 </span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
 </span></span><span style=display:flex><span>    <span style=color:#00f>int</span> i,a,b,sum=0;
@@ -82,7 +81,7 @@
 </span></span><span style=display:flex><span>}
 </span></span></code></pre></div><h2 id=輸入10輸出為何-1>輸入10，輸出為何?</h2><p>A:85</p><p>n=10，重複10次
 先看abc變化
-a=1，b=2，c=3<br>第一次:a=2，b=3，c=4<br>第二次:a=3，b=4，c=5&mldr;<br>第十次:a=11，b=12，c=13</p><p>接著是sum變化。每次sum加了<br>第一次:-1+2+3=4<br>第二次:-2+3+4=5<br>第十次:-10+11+12=13</p><p>注意每一次加的是上一次加的數字，因為是先加才改變。觀察發現其實就是4加到13的等差數列</p>\frac{(4+13)\times10}{2}=85<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+a=1，b=2，c=3<br>第一次:a=2，b=3，c=4<br>第二次:a=3，b=4，c=5&mldr;<br>第十次:a=11，b=12，c=13</p><p>接著是sum變化。每次sum加了<br>第一次:-1+2+3=4<br>第二次:-2+3+4=5<br>第十次:-10+11+12=13</p><p>注意每一次加的是上一次加的數字，因為是先加才改變。觀察發現其實就是4加到13的等差數列</p>\[\frac{(4+13)\times10}{2}=85\]<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
 </span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
 </span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
 </span></span><span style=display:flex><span>    <span style=color:#00f>int</span> n,i,a=1,b=2,c=3,sum=0;
@@ -128,7 +127,7 @@ a=1，b=2，c=3<br>第一次:a=2，b=3，c=4<br>第二次:a=3，b=4，c=5&mldr;<
 </span></span><span style=display:flex><span>    cout&lt;&lt;count;
 </span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
 </span></span><span style=display:flex><span>}  
-</span></span></code></pre></div><h2 id=輸入20輸出為何>輸入20，輸出為何?</h2><p>A:210</p><p>裡面的迴圈第一次重複1(+1)，第二次重複2(+2)，共20次</p>\frac{(1+20)\times20}{2}=210<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></code></pre></div><h2 id=輸入20輸出為何>輸入20，輸出為何?</h2><p>A:210</p><p>裡面的迴圈第一次重複1(+1)，第二次重複2(+2)，共20次</p>\[\frac{(1+20)\times20}{2}=210\]<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
 </span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
 </span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
 </span></span><span style=display:flex><span>    <span style=color:#00f>int</span> i,j,n,a=0;
