@@ -1,0 +1,171 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>高一C++期中考詳解 &#183; 毛哥EM的筆記 EM's Notes</title><meta name=description content="西苑高中鄭傑的高一C++期中考考題詳解"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="EM's Notes"><meta property="og:description" content="My notes for everyting"><meta property="og:url" content="https://edit-mr.github.io/notes/posts/cpp-exam-answer/"><meta property="og:site_name" content="EM's Notes"><meta property="og:image" content="https://edit-mr.github.io/notes"><meta name=twitter:card content="summary"><meta name=twitter:title content="EM's Notes"><meta name=twitter:description content="My notes for everyting"><meta name=twitter:site content="https://edit-mr.github.io/notes"><meta name=twitter:creator content><meta name=twitter:image content="https://edit-mr.github.io/notes"><link href=https://edit-mr.github.io/notes/css/katex.min.css rel=stylesheet><link href=https://edit-mr.github.io/notes/css/concated.min.css rel=stylesheet><script async src="https://www.googletagmanager.com/gtag/js?id=G-9R5PZG2VQG"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-9R5PZG2VQG",{anonymize_ip:!1})}</script></head><body class=single-body><nav class="nav-bar side-padding"><h1 class=nav-header><a href=https://edit-mr.github.io/notes class=nav-text>EM's Notes</a></h1><div class=hamburger-menu><input class=hamburger-menu-button type=checkbox onclick=hamburgerMenuPressed.call(this)><div class=hamburger-menu-icon><span></span>
+<span></span></div><ul id=menu class=hamburger-menu-overlay><li><a href=https://edit-mr.github.io/notes class=hamburger-menu-overlay-link>Home</a></li><li><a href=https://edit-mr.github.io/notes/about/ class=hamburger-menu-overlay-link>關於 About</a></li><li><a href=https://edit-mr.github.io/notes/categories/coding/ class=hamburger-menu-overlay-link>Coding</a></li><li><a href=https://edit-mr.github.io/notes/categories/debate/ class=hamburger-menu-overlay-link>Debate</a></li><li><a href=https://edit-mr.github.io/notes/categories/hugo/ class=hamburger-menu-overlay-link>Hugo</a></li><li><a href=https://edit-mr.github.io/notes/categories/web-design/ class=hamburger-menu-overlay-link>Web Design</a></li></ul></div></nav><main class="content side-text-padding"><article class="post dropcase"><header class=post-header><h1 class=post-title>高一C++期中考詳解</h1><p class=post-date>Posted <time datetime=2022-11-17>Nov 17, 2022</time></p></header><p>這裡提供了我的解題思路，僅供參考，任何能算出解答的都是好方法。因為是期末考所以我是等所有人都考完才發，且因為這只是給西苑的朋友看所以發在這裡就沒有發在資訊密技了。</p><p>各個班級順序不同，這裡依據難易度排序</p><blockquote><p><s>作弊</s>驗算:右鍵，使用Google Lens搜尋圖片，複製文字，貼到隨便一個C++編譯器即可。只有<code>#include</code>那行一定要換行，其他有分號的都可以不用管。</p></blockquote><h2 id=輸入2-3-4-5輸出為何>輸入2 3 4 5，輸出為何?</h2><p>A:3</p><p>帶入 val=3/2+4/3+5/3; 記得先乘除後加減，且都是int只會算出整數<br>var=1+1+1=3</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> a,b,c,d,val=1;
+</span></span><span style=display:flex><span>    cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;
+</span></span><span style=display:flex><span>    val=b/a+c/b+d/b;
+</span></span><span style=display:flex><span>    cout&lt;&lt;val;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}  
+</span></span></code></pre></div><h2 id=輸入8輸出為何>輸入8，輸出為何?</h2><p>A:14</p><p><code>pow(a,b)</code>是a的b次方。8*8=64大於50所以是要輸出8+2*3=14</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;cmath&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> a;
+</span></span><span style=display:flex><span>    cin&gt;&gt;a;
+</span></span><span style=display:flex><span>    <span style=color:#00f>if</span>(pow(a,2)&lt;50){
+</span></span><span style=display:flex><span>        cout&lt;&lt;a*2+3;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#00f>else</span>{
+</span></span><span style=display:flex><span>        cout&lt;&lt;a+2*3;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}  
+</span></span></code></pre></div><h2 id=輸入8-7輸出為何>輸入8 7，輸出為何?</h2><p>A:7</p><p>if裡面是一個交換，如果a>b就交換。8>7所以原本的a從8換成7。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> a,b,c=5;
+</span></span><span style=display:flex><span>    cin&gt;&gt;a&gt;&gt;b;
+</span></span><span style=display:flex><span>    <span style=color:#00f>if</span>(a &gt; b){
+</span></span><span style=display:flex><span>        c = a;
+</span></span><span style=display:flex><span>        a = b;
+</span></span><span style=display:flex><span>        b = c;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;a;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}  
+</span></span></code></pre></div><h2 id=輸入10輸出為何>輸入10，輸出為何?</h2><p>A:16</p><ul><li>10>0所以count會變成11</li><li>接著11大於10所以變成12。12除以4整除沒有餘數所以變0</li><li>最後count 0沒有大於0所以會改成16</li></ul><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> count;
+</span></span><span style=display:flex><span>    cin&gt;&gt;count;
+</span></span><span style=display:flex><span>    <span style=color:#00f>if</span>(count &gt; 0){
+</span></span><span style=display:flex><span>        count = 11;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#00f>if</span>(count &gt; 10){
+</span></span><span style=display:flex><span>        count = 12;
+</span></span><span style=display:flex><span>        <span style=color:#00f>if</span>(count % 4 == 3){
+</span></span><span style=display:flex><span>            count = 1;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#00f>else</span>{
+</span></span><span style=display:flex><span>            count = 0;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#00f>else</span> <span style=color:#00f>if</span>(count &gt; 11){
+</span></span><span style=display:flex><span>        count = 13;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#00f>else</span>{
+</span></span><span style=display:flex><span>        count = 14;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#00f>if</span>(count &gt; 0){
+</span></span><span style=display:flex><span>        count = 15;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#00f>else</span>{
+</span></span><span style=display:flex><span>        count = 16;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;count;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}  
+</span></span></code></pre></div><h2 id=輸入31-69輸出為何>輸入31 69，輸出為何?</h2><p>A:1000</p><p>經過一番輸入a=31,b=69,i=a=31,sum=0</p><p>迴圈會從3加到69，公差為2。
+\frac{(31+69)[(69-31)\div2+1]}{2}=1000</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> i,a,b,sum=0;
+</span></span><span style=display:flex><span>    cin&gt;&gt;a&gt;&gt;b;
+</span></span><span style=display:flex><span>    <span style=color:#00f>for</span>(i=a; i&lt;=b; i=i+2){
+</span></span><span style=display:flex><span>        sum=sum+i;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;sum;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=輸入10輸出為何-1>輸入10，輸出為何?</h2><p>A:85</p><p>n=10，重複10次
+先看abc變化
+a=1，b=2，c=3<br>第一次:a=2，b=3，c=4<br>第二次:a=3，b=4，c=5&mldr;<br>第十次:a=11，b=12，c=13</p><p>接著是sum變化。每次sum加了<br>第一次:-1+2+3=4<br>第二次:-2+3+4=5<br>第十次:-10+11+12=13</p><p>注意每一次加的是上一次加的數字，因為是先加才改變。觀察發現其實就是4加到13的等差數列</p>\frac{(4+13)\times10}{2}=85<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> n,i,a=1,b=2,c=3,sum=0;
+</span></span><span style=display:flex><span>    cin&gt;&gt;n;
+</span></span><span style=display:flex><span>    <span style=color:#00f>for</span>(i=1; i&lt;=n; i++){
+</span></span><span style=display:flex><span>        sum=sum-a+b+c;
+</span></span><span style=display:flex><span>        a=b;
+</span></span><span style=display:flex><span>        b=c;
+</span></span><span style=display:flex><span>        c++;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;sum;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=輸入100輸出為何>輸入100，輸出為何?</h2><p>A:100</p><p>迴圈從1到100重複100次。每次都是+b-a</p><p>先看ab變化<br>a=0，b=1<br>第一次:a=1，b=2<br>第二次:a=2，b=3&mldr;<br>第十次:a=100，b=101</p><p>接著是sum變化<br>第一次:0-1+2=1<br>第二次:1-2+3=2&mldr;<br>第100次:99-100+101=100</p><p>觀察發現不就是每次加一。零加一一百次就是一百</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> n,i,a=0,b=1,sum=0;
+</span></span><span style=display:flex><span>    cin&gt;&gt;n;
+</span></span><span style=display:flex><span>    <span style=color:#00f>for</span>(i=1; i&lt;=n; i++){
+</span></span><span style=display:flex><span>        sum=sum-a+b;
+</span></span><span style=display:flex><span>        a=b;
+</span></span><span style=display:flex><span>        b++;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;sum;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=輸入9輸出為何>輸入9，輸出為何?</h2><p>A:19</p><p>當n>1時,將會一直執行第7~13行程式碼</p><p>n=100
+1100除以2沒有餘數變50<br>50除以2沒有餘數變25<br>25除以2餘1變76<br>76除以2沒有餘數變38<br>38除以2沒有餘數變19<br>19除以2餘1變58<br>58除以2沒有餘數變29<br>29除以2餘1變88<br>88除以2沒有餘數變44<br>44除以2沒有餘數變22<br>22除以2沒有餘數變11<br>11除以2餘1變34<br>34除以2沒有餘數變17<br>17除以2餘1變52<br>52除以2沒有餘數變26<br>26除以2沒有餘數變13<br>13除以2餘1變40<br>40除以2沒有餘數變20<br>20除以2沒有餘數變10<br>10除以2沒有餘數變5<br>5除以2餘1變16<br>16除以2沒有餘數變8<br>8除以2沒有餘數變4<br>4除以2沒有餘數變2<br>1除以2沒有餘數變1
+1除以2=0.5</p><p>數一下沒有餘數的有19次</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> n,count=0;
+</span></span><span style=display:flex><span>    cin&gt;&gt;n;
+</span></span><span style=display:flex><span>    <span style=color:#00f>while</span>(n&gt;1){
+</span></span><span style=display:flex><span>        <span style=color:#00f>if</span>(n%2==1){
+</span></span><span style=display:flex><span>            n=3*n+1;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#00f>else</span>{
+</span></span><span style=display:flex><span>            n=n/2;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        count++;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;count;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}  
+</span></span></code></pre></div><h2 id=輸入20輸出為何>輸入20，輸出為何?</h2><p>A:210</p><p>裡面的迴圈第一次重複1(+1)，第二次重複2(+2)，共20次</p>\frac{(1+20)\times20}{2}=210<div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> i,j,n,a=0;
+</span></span><span style=display:flex><span>    cin&gt;&gt;n;
+</span></span><span style=display:flex><span>    <span style=color:#00f>for</span>(i=1; i&lt;=n; i++){
+</span></span><span style=display:flex><span>        <span style=color:#00f>for</span>(j=1; j&lt;=i; j++){
+</span></span><span style=display:flex><span>            a++;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;a;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}  
+</span></span></code></pre></div><h2 id=輸入13輸出為何>輸入13，輸出為何?</h2><p>A:20</p><p>觀察這個雙重迴圈可以發現他是把所有n和j的可能組合依序兩兩相加(比如說1配1、1配2&mldr;)
+題目要找出相加等於2、3、4的組合並加權。</p><p>2的組合有11-1個<br>3有12、21-兩個<br>4有13、22、31-三個<br>x=2×1+3×2+4×3=20</p><p>因為n比4還要大所以所有組合都會被試到。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span><span style=color:red;font-style:italic>#include</span><span style=color:red;font-style:italic>&lt;iostream&gt;</span><span style=color:red;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:red;font-style:italic></span><span style=color:#00f>using</span> <span style=color:#00f>namespace</span> std;
+</span></span><span style=display:flex><span><span style=color:#00f>int</span> <span style=color:#c34e00>main</span>(){
+</span></span><span style=display:flex><span>    <span style=color:#00f>int</span> n,i,j,x=0;
+</span></span><span style=display:flex><span>    cin&gt;&gt;n;
+</span></span><span style=display:flex><span>    <span style=color:#00f>for</span>(i=1; i&lt;=n; i++){
+</span></span><span style=display:flex><span>        <span style=color:#00f>for</span>(j=1; j&lt;=n; j++){
+</span></span><span style=display:flex><span>            <span style=color:#00f>if</span>((i+j)==2){
+</span></span><span style=display:flex><span>                x=x+2;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#00f>if</span>((i+j)==3){
+</span></span><span style=display:flex><span>                x=x+3;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>            <span style=color:#00f>if</span>((i+j)==4){
+</span></span><span style=display:flex><span>                x=x+4;
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    cout&lt;&lt;x;
+</span></span><span style=display:flex><span>    <span style=color:#00f>return</span> 0;
+</span></span><span style=display:flex><span>}  
+</span></span></code></pre></div><p>以上，若有任何問題歡迎問鄭傑或我</p></article></main><nav class="end-nav side-padding"><a ontouchstart=cardPressed.call(this) ontouchend=cardReleased.call(this) ontouchmove=cardReleased.call(this) href=https://edit-mr.github.io/notes/posts/html-form/ class="card blog-card bc-next" rel=bookmark><article class=card-body><h2 class=card-title>HTML Form</h2><p class=card-text>HTML表單</p><div class="card-subtext muted-text"><p>Posted <time datetime=2022-10-31>Oct 31, 2022</time></p><p>#Web Design</p></div></article></a></nav><footer class=side-padding style=background-image:url(https://edit-mr.github.io/notes/img/home-blob-flip.svg)><a href=https://edit-mr.github.io/notes class=footer-link><img class=footer-icon src=https://edit-mr.github.io/notes/icons/home.svg alt=Home></a>
+<a href=https://github.com/Edit-Mr class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/github.svg alt=GitHub></a>
+<a href=https://www.instagram.com/elvisdragonmao/ class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/instagram.svg alt=Instagram></a>
+<a href=https://www.youtube.com/channel/UCiXuSx3IuiYI87dHOhVxC6A class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/youtube.svg alt=Youtube></a></footer><script defer src=https://edit-mr.github.io/notes/js/katex.min.js></script>
+<script defer src=https://edit-mr.github.io/notes/js/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script src=https://edit-mr.github.io/notes/js/core.min.js></script></body></html>
