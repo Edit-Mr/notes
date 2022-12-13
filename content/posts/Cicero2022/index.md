@@ -1,5 +1,4 @@
-—-
-
+—--
 title: 我從西賽羅學到的事
 date: 2022-12-13
 description: “記錄一下”
@@ -13,7 +12,7 @@ resources:
   src: “photo.jpeg”
   params:
     description: “我從西賽羅學到的事”
-—-
+---
 
 很開心可以參加這一次的2022 Taipei Cicero English Debate Tournament。過程中從搜集資料到辯論技巧都學到很多東西。非常感謝陪伴我們一起準備的Tr.Terrence、Tr.Olina、跳跳老師、還有我所有的隊友們。每個人都扮演很重要的角色且在自己擅長的事情為大家貢獻。有的人有寫稿能力，有的人有搜集資料的能力，有的人為我們貢獻了*很多*時間精力。真的是完整的經歷過一次才會真的知道每一個細節都是很大的技術。
 
