@@ -1,5 +1,5 @@
 ---
-title: 我從西賽羅學到的事
+title: “我從西賽羅學到的事”
 date: 2022-12-13
 description: “記錄一下”
 categories: [“Debate”]
