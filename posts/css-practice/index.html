@@ -1,0 +1,67 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>CSS複習 &#183; 毛哥EM的筆記 EM's Notes</title><meta name=description content="CSS複習一些重要或容易忘記的語法"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="EM's Notes"><meta property="og:description" content="My notes for everyting"><meta property="og:url" content="https://edit-mr.github.io/notes/posts/css-practice/"><meta property="og:site_name" content="EM's Notes"><meta property="og:image" content="https://edit-mr.github.io/notes"><meta name=twitter:card content="summary"><meta name=twitter:title content="EM's Notes"><meta name=twitter:description content="My notes for everyting"><meta name=twitter:site content="https://edit-mr.github.io/notes"><meta name=twitter:creator content><meta name=twitter:image content="https://edit-mr.github.io/notes"><link href=https://edit-mr.github.io/notes/css/katex.min.css rel=stylesheet><link href=https://edit-mr.github.io/notes/css/concated.min.css rel=stylesheet><script async src="https://www.googletagmanager.com/gtag/js?id=G-9R5PZG2VQG"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-9R5PZG2VQG",{anonymize_ip:!1})}</script></head><body class=single-body><nav class="nav-bar side-padding"><h1 class=nav-header><a href=https://edit-mr.github.io/notes class=nav-text>EM's Notes</a></h1><div class=hamburger-menu><input class=hamburger-menu-button type=checkbox onclick=hamburgerMenuPressed.call(this)><div class=hamburger-menu-icon><span></span>
+<span></span></div><ul id=menu class=hamburger-menu-overlay><li><a href=https://edit-mr.github.io/notes class=hamburger-menu-overlay-link>Home</a></li><li><a href=https://edit-mr.github.io/notes/about/ class=hamburger-menu-overlay-link>關於 About</a></li><li><a href=https://edit-mr.github.io/notes/categories/coding/ class=hamburger-menu-overlay-link>Coding</a></li><li><a href=https://edit-mr.github.io/notes/categories/debate/ class=hamburger-menu-overlay-link>Debate</a></li><li><a href=https://edit-mr.github.io/notes/categories/hugo/ class=hamburger-menu-overlay-link>Hugo</a></li><li><a href=https://edit-mr.github.io/notes/categories/web-design/ class=hamburger-menu-overlay-link>Web Design</a></li></ul></div></nav><main class="content side-text-padding"><article class="post dropcase"><header class=post-header><h1 class=post-title>CSS複習</h1><p class=post-date>Posted <time datetime=2022-12-19>Dec 19, 2022</time></p></header><h2>Contents</h2><nav id=TableOfContents><ul><li><a href=#選擇器>選擇器</a><ul><li><a href=#偽類-pseuedo-classes>偽類 Pseuedo-classes</a></li><li><a href=#pseudo-elements-偽元素>Pseudo-elements 偽元素</a></li><li><a href=#font-weight>font-weight</a></li><li><a href=#overflow>overflow</a></li><li><a href=#display>display</a></li></ul></li></ul></nav><p>這裡會複習一些CSS重要或容易忘記的語法，不太適合因手閱讀。</p><h2 id=選擇器>選擇器</h2><ul><li>所有後代:<code>*</code></li><li>後代選擇器: <code>nav a</code></li><li>群組選擇器: <code>nav, a</code></li><li>親代選擇器: <code>ol > li</code> (只能在裡面一層)</li><li>相鄰兄弟: <code>h1 + p</code>(後面的第一個)</li><li>一般兄弟: <code>h1 ~ p</code>(後面的)</li><li>屬性選擇器: <code>a[href="https://twitter.com"]</code></li></ul><h3 id=偽類-pseuedo-classes>偽類 Pseuedo-classes</h3><p>偽類之所以叫作偽，簡單來說它的選擇器所選的不是真正存在的類別（class屬性值），它的選擇符為：冒號，它可以用來幫元素的“狀態”套樣式，或是用順序來指定元素等，通常在基本選擇器或是組合方式的選擇器無法選到、或選擇起來不夠方便時，就會用到偽類。很多時候使用偽類，可以省下幫很多元素做class的命名。</p><ul><li>未被訪問: <code>:link</code></li><li>已被訪問:<code>:visited</code></li><li>懸浮:<code>:hover</code></li><li>按下去/右鍵:<code>:active</code></li><li>被鍵盤輸入鎖定:<code>:focus</code></li><li>根元素偽類:<code>:root</code>(權重比較高)</li><li>兄弟結構偽類:<code>:nth-child()</code><ul><li>第一個:<code>nth-child(1)</code></li><li>奇數個:<code>nth-child(even)</code></li><li>偶數個:<code>:nth-child(odd)</code></li></ul></li><li>用算式:<code>:nth=child(an+b)</code>(如每三列第一則:<code>:nth-child(3n+1)</code>)</li></ul><h3 id=pseudo-elements-偽元素>Pseudo-elements 偽元素</h3><p>偽元素跟偽類的差異在於，偽類是基於真實存在的元素去選取不存在的class ; 而偽類則是基於存在的元素，創出一個虛擬的元素。它的選擇符是<code>::</code>雙冒號。</p><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;p&gt;大家好&lt;/p&gt;
+</span></span></code></pre></div><ul><li>content: &ldquo;哈囉&rdquo;;
+color: red;
+}</li></ul><pre tabindex=0><code>=&lt;span style=color:red&gt;哈囉&lt;/span&gt;大家好
+
+
+
+
+  * :``
+  * :``
+  * :``
+  * :``
+
+
+## 裝飾文字
+
+&lt;p style=&#34;color:rgb(252, 3, 3, 0.8);
+  font-size:1em;
+  letter-spacing: 10px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration:underline;
+  font-style:italic;
+  Opacity:0.5;
+  text-align:left;
+  font-family:arial, sans-serif;&#34;&gt;毛哥EM Elvis Dragon Mao&lt;/p&gt;
+
+```css
+color:rgb(252, 3, 3, 0.8);
+  font-size:1em;
+  letter-spacing: 10px;
+  line-height: 20px;
+  font-weight: 500;
+  text-decoration:underline;
+  font-style:italic;
+  opacity: 0.5;
+  text-align:left;
+  font-family:arial, sans-serif;
+</code></pre><h3 id=font-weight>font-weight</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:red;font-style:italic>/* Keyword values */</span>
+</span></span><span style=display:flex><span>font-weight: normal;
+</span></span><span style=display:flex><span>font-weight: bold;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:red;font-style:italic>/* Keyword values relative to the parent */</span>
+</span></span><span style=display:flex><span>font-weight: lighter;
+</span></span><span style=display:flex><span>font-weight: bolder;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:red;font-style:italic>/* Numeric keyword values */</span>
+</span></span><span style=display:flex><span>font-weight: 100;
+</span></span><span style=display:flex><span>font-weight: 400; <span style=color:red;font-style:italic>/* normal */</span>
+</span></span><span style=display:flex><span>font-weight: 700; <span style=color:red;font-style:italic>/* bold */</span>
+</span></span><span style=display:flex><span>font-weight: 900;
+</span></span></code></pre></div><h3 id=overflow>overflow</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css><span style=display:flex><span><span style=color:red;font-style:italic>/* Keyword values */</span>
+</span></span><span style=display:flex><span>overflow: visible;<span style=color:red;font-style:italic>/* 可突出 */</span>
+</span></span><span style=display:flex><span>overflow: hidden;
+</span></span><span style=display:flex><span>overflow: clip;<span style=color:red;font-style:italic>/* 禁止所有滾動 */</span>
+</span></span><span style=display:flex><span>overflow: scroll;
+</span></span><span style=display:flex><span>overflow: auto;
+</span></span><span style=display:flex><span>overflow: overlay;<span style=color:red;font-style:italic>/* 不佔空間的auto */</span>
+</span></span><span style=display:flex><span>overflow: hidden visible;
+</span></span></code></pre></div><h3 id=display>display</h3><div class=highlight><pre tabindex=0 style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-css data-lang=css></code></pre></div></article></main><nav class="end-nav side-padding"><a ontouchstart=cardPressed.call(this) ontouchend=cardReleased.call(this) ontouchmove=cardReleased.call(this) href=https://edit-mr.github.io/notes/posts/cicero2022/ class="card blog-card bc-next" rel=bookmark><div class=card-img-container><p class=card-img-overlay>Next Article</p><picture><source srcset="https://edit-mr.github.io/notes/posts/cicero2022/photo_hu2fd9ccdca6409d37ee7b189975fe7230_548873_400x0_resize_q75_lanczos.jpeg 1x, https://edit-mr.github.io/notes/posts/cicero2022/photo_hu2fd9ccdca6409d37ee7b189975fe7230_548873_800x0_resize_q75_lanczos.jpeg 2x, https://edit-mr.github.io/notes/posts/cicero2022/photo_hu2fd9ccdca6409d37ee7b189975fe7230_548873_1200x0_resize_q75_lanczos.jpeg 3x"><img src=https://edit-mr.github.io/notes/posts/cicero2022/photo_hu2fd9ccdca6409d37ee7b189975fe7230_548873_400x0_resize_q75_lanczos.jpeg class=card-img alt=我從西賽羅學到的事></picture></div><article class=card-body><h2 class=card-title>我從西賽羅學到的事</h2><p class=card-text>記錄一下</p><div class="card-subtext muted-text"><p>Posted <time datetime=2022-12-13>Dec 13, 2022</time></p><p>#Debate</p></div></article></a></nav><footer class=side-padding style=background-image:url(https://edit-mr.github.io/notes/img/home-blob-flip.svg)><a href=https://edit-mr.github.io/notes class=footer-link><img class=footer-icon src=https://edit-mr.github.io/notes/icons/home.svg alt=Home></a>
+<a href=https://github.com/Edit-Mr class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/github.svg alt=GitHub></a>
+<a href=https://www.instagram.com/elvisdragonmao/ class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/instagram.svg alt=Instagram></a>
+<a href=https://www.youtube.com/channel/UCiXuSx3IuiYI87dHOhVxC6A class=footer-link target=_blank rel="noopener noreferrer"><img class=footer-icon src=https://edit-mr.github.io/notes/icons/youtube.svg alt=Youtube></a></footer><script defer src=https://edit-mr.github.io/notes/js/katex.min.js></script>
+<script defer src=https://edit-mr.github.io/notes/js/auto-render.min.js onload=renderMathInElement(document.body)></script>
+<script src=https://edit-mr.github.io/notes/js/core.min.js></script></body></html>
