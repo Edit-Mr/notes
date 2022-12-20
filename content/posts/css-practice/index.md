@@ -14,6 +14,7 @@ toc: true
 
 這裡會複習一些CSS重要或容易忘記的語法，不太適合因手閱讀。
 ## 選擇器
+
 * 所有後代:`*`
 * 後代選擇器: `nav a`
 * 群組選擇器: `nav, a`
@@ -21,6 +22,9 @@ toc: true
 * 相鄰兄弟: ` h1 + p`(後面的第一個)
 * 一般兄弟: ` h1 ~ p`(後面的)
 * 屬性選擇器: `a[href="https://twitter.com"]`
+  * 屬性某個地方: `a[href*="tuts"]` (nettuts.com、net.tutsplus.com、tutsplus.com)
+  * 屬性開頭: `a[href^="http"]`
+  * 屬性結尾: `[href$=".jpg"]`
 ### 偽類 Pseuedo-classes
 
 偽類之所以叫作偽，簡單來說它的選擇器所選的不是真正存在的類別（class屬性值），它的選擇符為：冒號，它可以用來幫元素的“狀態”套樣式，或是用順序來指定元素等，通常在基本選擇器或是組合方式的選擇器無法選到、或選擇起來不夠方便時，就會用到偽類。很多時候使用偽類，可以省下幫很多元素做class的命名。
@@ -51,16 +55,29 @@ p::before {
 }
 ```
 =<span style=color:red>哈囉</span>大家好
+### 權重
+從上比下來。這裡有一個[計算機](https://specificity.keegan.st/)
+* `!important`
+* ID 選擇器
+* 類別選擇器、屬性選擇器、偽類選擇器(如:`root`)
+* 元素選擇器、偽元素選擇器
+* 任何元素選擇符`*`沒有權級
 
+權重如果相等，後寫的樣式宣告會蓋過先前的樣式宣告
+## 單位
 
+### 顏色
+RGB 是以「直視光」的方式理解色域，可以說是光本身，與光的混合來理解顏色。
 
-
-  * :``
-  * :``
-  * :``
-  * :``
-
-
+HSL 是以「反射光」的方式理解色域，可以說是物體本身的顏色與環境光的結果，來理解顏色。
+### 大小
+* px:相對顯示器的解析度
+* em:相對父元素的m寬度(預設16px)
+* rem:相對根元素的m寬度(預設16px)
+* vw/vh: viewport（視口）寬/長度
+* %
+  * width跟height的%基準是父層
+  * line-height以本身文字行高為基準
 ## 裝飾文字
 
 <p style="color:rgb(252, 3, 3, 0.8);
@@ -86,7 +103,8 @@ color:rgb(252, 3, 3, 0.8);
   text-align:left;
   font-family:arial, sans-serif;
   ```
-  ### font-weight
+
+### font-weight
 
 ```css
 /* Keyword values */
@@ -103,19 +121,107 @@ font-weight: 400; /* normal */
 font-weight: 700; /* bold */
 font-weight: 900;
 ```
+### text-decoration
+```css
+text-decoration: underline;
+text-decoration: overline red;
+text-decoration: none;
+text-decoration-color: #ff00ff;
+```
 
-### overflow
+## background
+### background-image
+
+```css
+background-image: url(./image/cloud.png);
+background-repeat: no-repeat;
+background-size: cover; /* 寬填滿 */
+background-size: contain; /* 高填滿 */
+height: 300px;
+
+background-position: top left;
+background-position: 20% 40%; /* 從左上開始算 */
+
+background-attachment: scroll; /* 不動但可以往下滾 */
+background-attachment: fixed; /* 卡住不動 */
+background-attachment: local; /* 一起動 */
+```
+
+### 漸層
+
+```css
+background: linear-gradius(degree, color);
+background: linear-gradient(#e66465, #9198e5);
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+```
+<img src=https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient/linear-gradient.png style="width:300px;display:inline;" />
+<img src=https://i.imgur.com/XUupJaf.png style="width:300px;display:inline;" />
+
+## border
+
+```css
+border-style: solid; /* 花邊很醜 相信我 */
+border-width: 10px;
+border-color: #00ff00;
+border: solid 10px hsl(0 ,100%, 100%);
+```
+### border-radius
+```css
+border-radius: 四個角;
+border-radius: 左上角與右下角 右上角與左下角;
+border-radius: 左上角 右上角 右下角 左下角;
+border-top-left-radius: BJ4;
+```
+### outline
+
+outline位置在border的外緣，但不佔用元素的任何空間。  
+outline不能夠聲明單邊樣式，它一定是圍繞呈現的。  
+outline的形狀可以不規則，它會順著border邊緣顯示，不一定得是矩形。可是目前大多數的瀏覽器不支援該特性。實際上驗證之下會發現outline並不會去適應border-radius的圓弧
+```css
+outline-style | outline-width | outline-color | outline-offset
+```
+## Box-sizing
+```
+box-sizing: content-box;
+box-sizing: border-box; <!-- 包含border/padding -->
+```
+
+### box
+![box](https://i.imgur.com/vxm8vFhm.png)
+## display
+
+CSS的Display屬性可以改變元素對外所參與的佈局環境（outer display type），例如：
+
+- `inline`: 參與IFC
+- `block`: 佔滿`<body>`作為block container的寬度
+- `contents`: 只有contents area的box，只顯示內容文字。
+- `inline-block`: 對外參與IFC佈局，對內創建了BFC佈局
+- `display: none` Bang不見
+
+也可以為元素創造內部的佈局環境，提供後代元素佈局的規則（inner display type）。對內創造的佈局例如：
+
+- `flow layout`  
+  block container的佈局環境，等於normal flow佈局：IFC水平佈局+BFC垂直佈局。
+- `flow root`  
+  創建一個新的BFC時，其內部的佈局叫做`flow root`，一個新的`normal flow`佈局。
+- `flex`  
+  彈性盒佈局，該屬性值的元素本身對外仍參與normal flow，可是內部環境為獨立的flex formatting context。
+- `grid`  
+  格線佈局，該屬性值的元素本身對外仍參與normal flow，可是內部環境為獨立的彈性盒佈局grid formatting context。
+
+## overflow
 ```css
 /* Keyword values */
-overflow: visible;/* 可突出 */
+overflow: visible; /* 可突出 */
 overflow: hidden;
-overflow: clip;/* 禁止所有滾動 */
+overflow: clip; /* 禁止所有滾動 */
 overflow: scroll;
 overflow: auto;
-overflow: overlay;/* 不佔空間的auto */
+overflow: overlay; /* 不佔空間的auto */
 overflow: hidden visible;
 ```
-### display
-```css
-
 
