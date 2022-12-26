@@ -7,13 +7,14 @@ dropCap: true
 displayInMenu: false
 displayInList: true
 draft: false
+toc: true
 resources:
 - name: featuredImage
   src: "photo.jpeg"
   params:
     description: "逢甲夜市"
 ---
-在這個PPT中，你可以根據每張幻燈片的內容決定要講多久時間。如果你要在 20 分鐘內介紹逢甲夜市，你可以考慮以下方案：
+> 在這個PPT中，你可以根據每張幻燈片的內容決定要講多久時間。如果你要在 20 分鐘內介紹逢甲夜市，你可以考慮以下方案：
 
 1. 在第一張幻燈片中，簡單介紹逢甲夜市的位置，並插入地圖或街景圖片，講 1-2 分鐘。
 

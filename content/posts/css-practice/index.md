@@ -13,6 +13,25 @@ toc: true
 ---
 
 這裡會複習一些CSS重要或容易忘記的語法，不太適合因手閱讀。
+
+## 假圖產生
+* https://fakeimg.pl/
+```html
+<img src="https://fakeimg.pl/300/">
+<img src="https://fakeimg.pl/250x100/">
+<img src="https://fakeimg.pl/250x100/ff0000/">
+<img src="https://fakeimg.pl/350x200/ff0000/000">
+<img src="https://fakeimg.pl/350x200/ff0000,128/000,255">
+<img src="https://fakeimg.pl/350x200/?text=Hello">
+<img src="https://fakeimg.pl/200x100/?retina=1&text=こんにちは&font=noto">
+<img src="https://fakeimg.pl/350x200/?text=World&font=lobster">
+```
+* *https://picsum.photos/
+```
+https://picsum.photos/200/300
+```
+
+
 ## 選擇器
 
 * 所有後代:`*`
@@ -186,10 +205,11 @@ outline-style | outline-width | outline-color | outline-offset
 ```
 ## Box-sizing
 ```
-box-sizing: content-box;
-box-sizing: border-box; <!-- 包含border/padding -->
+box-sizing:content-box;  // 把寬度範圍指定給內容物的空間
+box-sizing:border-box;  // 把寬度範圍指定給邊框到邊框之間的空間
 ```
-
+所以在 block 元素中只要設定 box-sizing:border-box; 就不用另外再計算padding、border 的寬度造成 width 賦予的值不直覺。
+假設 width:300px, padding 就算加了 20px, border 加了4px，寬度依舊是300px。
 ### box
 ![box](https://i.imgur.com/vxm8vFhm.png)
 ## display
@@ -202,6 +222,12 @@ CSS的Display屬性可以改變元素對外所參與的佈局環境（outer disp
 - `inline-block`: 對外參與IFC佈局，對內創建了BFC佈局
 - `display: none` Bang不見
 
+* block 是有面積的，可以設定寬跟高
+* inline 設定寬高無效，可以設定 padding 的左右值，上下值無效，無法被撐開。
+* inline-block 同時擁有兩種 display 的特性，可以設定寬高，但也可以與其他元素並排
+
+> 如果使用 inline-block(像是 a 或 li 設定)，標籤之間會有空白字元約 4~5px
+
 也可以為元素創造內部的佈局環境，提供後代元素佈局的規則（inner display type）。對內創造的佈局例如：
 
 - `flow layout`  
@@ -213,6 +239,93 @@ CSS的Display屬性可以改變元素對外所參與的佈局環境（outer disp
 - `grid`  
   格線佈局，該屬性值的元素本身對外仍參與normal flow，可是內部環境為獨立的彈性盒佈局grid formatting context。
 
+## float
+### 用法
+#### none
+![](https://i.imgur.com/wHErd2k.png)
+#### left
+![](https://i.imgur.com/Yz6bJ16.png)
+### 問題
+### float collapse
+![](https://i.imgur.com/Zdntd5z.png)
+解決方法很多，列幾個
+* 元素的float參數不為none
+* 元素的position參數為absolute或fixed
+* 元素的display為inline-block
+* overflow參數不為visible的block元素
+* display參數為flow-root的元素
+### Clear
+```css
+clear: left|right|both;
+```
+會讓左/右不會重疊到
+```html
+<div></div><div></div><div></div>
+```
+![](https://i.imgur.com/KJsAt0K.png)
+![](https://i.imgur.com/In4DqWf.png)
+
+## Position
+讓我最頭痛的。功能是設定**物件定位時所要的參考對像**
+```css 
+position:static | relative | absolute | fixed | sticky;
+top | right | bottom | left: 10px;
+```
+### static 原始定位
+inline往右，block往下
+### reletive 相對定位
+我原本該在哪裡位置就佔著，但我看起來要往右/下...。
+![](https://i.imgur.com/H1Vru7P.png)
+
+### absolute 絕對定位
+貼到最近的reletive祖先元素。口決:父相子絕
+### fixed
+貼著視窗，卡在那裡，原本位置不再佔據
+# sticky
+以自己為基準，卡在那裡，但sticky元素仍然in flow，元素佔位會保留
+![](https://media.giphy.com/media/LRs2BIsDx1WjzSdIAJ/giphy.gif)
+## Transform: translate
+```css
+transform: translate(單位或百分比, 單位或百分比);
+transform: translateX(單位或百分比);
+transform: translateY(單位或百分比);
+```
+單位值為多少就平移多少，然後transform支援負值
+```css
+.translate {
+  background-color: pink;
+  transform: translate(100px, -50px);
+}
+```
+![](https://i.imgur.com/IFdDGiC.png)
+
+translate的百分比基準是自己的width跟height
+![](https://i.imgur.com/jM1Hazt.png)
+來一個推方塊範例
+```css
+.outer  {
+  position: relative;
+}
+
+img {
+  position: absolute;
+  top:50%;
+  left: 50%;
+}
+```
+![](https://i.imgur.com/Gswm945.png)
+
+再來往左上推: `transform: translate(-50%, -50%);`
+
+![](https://i.imgur.com/YeDUST3.png)
+## transition 轉場
+``` css
+transition: 屬性 轉換時間 延遲執行動畫的時間 速度;
+
+transition:all .3s 0s ease;// 設定全部 0.3秒轉換 沒有延遲 ease為預設值
+transition: padding .3s 0s, background-color 1s 1s; // 可以各別設定，用逗號分開，並用延遲時間設定出現的先後順序
+// ** 任何標籤都可以設定hover e.g. 文字段落滑過要變色
+```
 ## overflow
 ```css
 /* Keyword values */
@@ -224,4 +337,6 @@ overflow: auto;
 overflow: overlay; /* 不佔空間的auto */
 overflow: hidden visible;
 ```
+差不就這樣啦!
 
+> 參考資料:MSN，[從門外漢到前端新手](https://ithelp.ithome.com.tw/users/20120683/ironman/2609?page=3)，
