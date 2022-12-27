@@ -337,6 +337,53 @@ overflow: auto;
 overflow: overlay; /* 不佔空間的auto */
 overflow: hidden visible;
 ```
+## Media
+```css
+@media screen and (條件) and (條件)...{ // 判斷式，用在screen螢幕的媒體
+}
+
+// 舉例
+@media screen and (min-width: 768px){ // why 設定768px?  i pad 的解析度1024*768
+    // 表768px以上的尺寸 樣式如何呈現(桌機)
+}
+```
+```html
+// head 裡要加上 "設定裝置縮放的模式"
+//     視窗大小/解析度  視窗內容:寬度 = 裝置寬度 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+##   圖片不放背景也可以占滿寬的寫法
+
+```html
+<div style="width: 400px;height: 400px;border: blue solid;">
+    <img style="width: 100%;height: 100%;object-fit: cover;"src="https://picsum.photos/500/300/?random=1">
+</div>
+```
+
+<div style="width: 400px;height: 400px;border: blue solid;">
+    <img style="width: 100%;height: 100%;object-fit: cover;"src="https://picsum.photos/500/300/?random=1">
+</div>
+
+## label for
+
+加了for屬性，點到 label上的文字，input也會打勾
+
+```html
+<input type="checkbox" name="" id="aa">
+<label for="aa">勾選a</label>
+<input type="checkbox" name="" id="bb">
+<label for="bb">勾選b</label>
+```
+
+<!-- 加了for屬性，點到 label上的文字，input也會打勾 -->
+<input type="checkbox" name="" id="aa">
+<label for="aa">勾選a</label>
+<input type="checkbox" name="" id="bb">
+<label for="bb">勾選b</label>
+
+
+
 差不就這樣啦!
+
 
 > 參考資料:MSN，[從門外漢到前端新手](https://ithelp.ithome.com.tw/users/20120683/ironman/2609?page=3)，
