@@ -2,7 +2,7 @@
 title: "Debate"
 date: 2023-02-01
 description: "Notes for debate couse"
-categories: \["Debate"]
+categories: ["Debate"]
 dropCap: true
 displayInMenu: false
 displayInList: true
