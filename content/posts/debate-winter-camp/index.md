@@ -1,7 +1,8 @@
 ---
+
 title: "Debate Winter Camp"
 date: 2023-02-01
-description: "Notes for debate couse"
+description: "Notes for debate course"
 categories: ["Debate"]
 dropCap: true
 displayInMenu: false
@@ -30,10 +31,27 @@ Define the key word
 *   Body
     *   arguments (stuck issue)
     *   elaborate on your plan
-* Closing REmark - summary/rebuttal
+*   Closing REmark - summary/rebuttal
 
 ## Pause time
 
-* `,` 0.5~0.75 sec.
-* `.` 0.75~1.25 sec.
-* `¶` 1.25~2 sec.
+*   `,` 0.5\~0.75 sec.
+*   `.` 0.75\~1.25 sec.
+*   `¶` 1.25\~2 sec.
+
+## Evidence
+
+### Analysis
+
+*   What kind
+*   Time
+*   Location
+*   Relation
+
+### Kind
+
+| Quantitative     | Qualitative                |
+| ---------------- | -------------------------- |
+| Measurable, 123  | Descriptive, abc           |
+| Statistical tool | Group by meaningful themes |
+
