@@ -1,5 +1,5 @@
 ---
-title: "Debate"
+title: "Debate Winter Camp"
 date: 2023-02-01
 description: "Notes for debate couse"
 categories: ["Debate"]
@@ -26,9 +26,13 @@ Define the key word
 
 ## Speech structure
 
-*   Opening Remark
-    *   greetings/stance
+*   Opening Remark - greetings/stance
 *   Body
-
     *   arguments (stuck issue)
     *   elaborate on your plan
+* Closing REmark - summary/rebuttal
+
+## Pause time
+    *   `,` 0.5~0.75 sec.
+    *   `.` 0.75~1.25 sec.
+    *   `¶` 1.25~2 sec.
