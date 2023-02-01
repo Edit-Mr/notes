@@ -33,6 +33,7 @@ Define the key word
 * Closing REmark - summary/rebuttal
 
 ## Pause time
-    *   `,` 0.5~0.75 sec.
-    *   `.` 0.75~1.25 sec.
-    *   `¶` 1.25~2 sec.
+
+* `,` 0.5~0.75 sec.
+* `.` 0.75~1.25 sec.
+* `¶` 1.25~2 sec.
