@@ -22,7 +22,7 @@ displayInList: true
 
 ### Topicality
 
-1.  Define the key word
+Define the key word
 
 ## Speech structure
 
@@ -32,5 +32,3 @@ displayInList: true
 
     *   arguments (stuck issue)
     *   elaborate on your plan
-*
-
