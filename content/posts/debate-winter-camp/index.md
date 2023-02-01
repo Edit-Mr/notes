@@ -1,7 +1,7 @@
 ---
 
 title: "Debate"
-date: 2022-10-27
+date: 2023-02-02
 description: "Notes for debate couse"
 categories: ["Debate"]
 dropCap: true
