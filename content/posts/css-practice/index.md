@@ -61,19 +61,22 @@ https://picsum.photos/200/300
   * 用算式:`:nth=child(an+b)`(如每三列第一則:`:nth-child(3n+1)`)
 
 ### Pseudo-elements 偽元素
+
 偽元素跟偽類的差異在於，偽類是基於真實存在的元素去選取不存在的class ; 而偽類則是基於存在的元素，創出一個虛擬的元素。它的選擇符是`::`雙冒號。
 
 ```html
 <p>大家好</p>
 ```
-+
+
 ```css
 p::before {
   content: "哈囉";
   color: red;
 }
 ```
-=<span style=color:red>哈囉</span>大家好
+
+<span style=color:red>哈囉</span>大家好
+
 ### 權重
 從上比下來。這裡有一個[計算機](https://specificity.keegan.st/)
 * `!important`
@@ -83,13 +86,17 @@ p::before {
 * 任何元素選擇符`*`沒有權級
 
 權重如果相等，後寫的樣式宣告會蓋過先前的樣式宣告
+
 ## 單位
 
 ### 顏色
+
 RGB 是以「直視光」的方式理解色域，可以說是光本身，與光的混合來理解顏色。
 
 HSL 是以「反射光」的方式理解色域，可以說是物體本身的顏色與環境光的結果，來理解顏色。
+
 ### 大小
+
 * px:相對顯示器的解析度
 * em:相對父元素的m寬度(預設16px)
 * rem:相對根元素的m寬度(預設16px)
@@ -97,6 +104,7 @@ HSL 是以「反射光」的方式理解色域，可以說是物體本身的顏�
 * %
   * width跟height的%基準是父層
   * line-height以本身文字行高為基準
+
 ## 裝飾文字
 
 <p style="color:rgb(252, 3, 3, 0.8);
