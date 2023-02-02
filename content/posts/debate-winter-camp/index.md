@@ -70,3 +70,16 @@ What factors should you consider?
 
 > When you get an evidence card you can ask who did this poll and if they can't answer, you can kick their ass.
 
+## Vo咖布咧玉
+
+*   Financial Statements - 財務報表
+
+強制認可權
+
+[x] prez
+[v] fial
+
+*   executive↓
+*   legislative(me)↓
+*   justice 司法
+
