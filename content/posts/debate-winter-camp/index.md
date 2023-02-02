@@ -3,10 +3,11 @@
 title: "Debate Winter Camp"
 date: 2023-02-01
 description: "Notes for debate course"
-categories: ["Debate"]
+categories: Debate
 dropCap: true
 displayInMenu: false
 displayInList: true
+
 ---
 
 ## Stock Issues
@@ -54,4 +55,18 @@ Define the key word
 | ---------------- | -------------------------- |
 | Measurable, 123  | Descriptive, abc           |
 | Statistical tool | Group by meaningful themes |
+
+## Making Public Policy
+
+What factors should you consider?
+
+### PBSTP
+
+*   **Politics** - Interest groups, NGOs, businesses
+*   **Budget** - Economic conditions
+*   **Science** - New scientific discoveries
+*   **Tech** - Technological change
+*   **Polls** - Public Opinion
+
+> When you get an evidence card you can ask who did this poll and if they can't answer, you can kick their ass.
 
