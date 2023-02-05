@@ -3,7 +3,7 @@
 title: "Debate Winter Camp"
 date: 2023-02-01
 description: "Notes for debate course"
-categories: "Debate"
+categories: ["Debate"]
 dropCap: true
 displayInMenu: false
 displayInList: true
