@@ -7,7 +7,7 @@ backgroundColor: #fff
 backgroundImage: url('bg.jpg')
 ---
 
-![bg left:50% 90%](\cover.png)
+![bg left:50% 90%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/\cover.png)
 # **The justice of Bubble Tea**
 
 English picture book Presentation
@@ -21,7 +21,7 @@ English picture book Presentation
 2. Eden being ridicule and humiliated but chose to ignore.
 3. Animals questions the true purpose of their actions.
 
-![bg right:50% 80%](hum.png)
+![bg right:50% 80%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/hum.png)
 
 ---
 
@@ -38,7 +38,7 @@ Use this story to satirize problems on the Internet
 * Hides behind Avatar/Fursona
 * Cancel Culture
 * The real justice
-![bg right:50% 90%](dog.png)
+![bg right:50% 90%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/dog.png)
 <!-- it is ironic -->
 <!-- * Satirizing the excessive pursuit of political correctness on the internet, which deprives people of freedom of speech.
 * Portraying the choice of victims to ignore potential harm.
@@ -49,7 +49,7 @@ Use this story to satirize problems on the Internet
 
 # Motivation
 
-![bg left:40% 85%](cat.png)
+![bg left:40% 85%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/cat.png)
 
 * These problems in the Internet are getting more and more serious
 * Similar personal experience
