@@ -4,10 +4,10 @@ theme: gaia
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: url('bg.jpg')
+backgroundImage: url('https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/bg.jpg')
 ---
 
-![bg left:50% 90%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/\cover.png)
+![bg left:50% 90%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/cover.png)
 # **The justice of Bubble Tea**
 
 English picture book Presentation
@@ -18,8 +18,8 @@ English picture book Presentation
 # Summary
 
 1. A dragon named Eden says boba should be used in bubble tea.
-2. Eden being ridicule and humiliated but chose to ignore.
-3. Animals questions the true purpose of their actions.
+2. Eden was ridicule and humiliated but chose to ignore.
+3. Animals question the true purpose of their actions.
 
 ![bg right:50% 80%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/hum.png)
 
@@ -27,7 +27,10 @@ English picture book Presentation
 
 # Story Element
 * Charactor: Eden, dragon, cat, dog, lepord cat, tiger, wolf.
-* 
+* conflicts: Eden(person) vs. animals(society)
+* Setting: A beautiful island
+* Climax: Eden being punched
+* Resolution: Animal questions the true purpose of their actions.
 
 ---
 
@@ -51,8 +54,8 @@ Use this story to satirize problems on the Internet
 
 ![bg left:40% 85%](https://raw.githubusercontent.com/Edit-Mr/notes/main/content/posts/story-book/cat.png)
 
-* These problems in the Internet are getting more and more serious
-* Similar personal experience
+* These problems on the Internet are getting more and more serious
+* Similar personal experiences
 * I love furries
 * I love bubble milk tea
 
@@ -71,7 +74,7 @@ Use this story to satirize problems on the Internet
 # Solutions
 
 * Create time schedules.
-* Discuss with the teacher ~~(with patient and love)~~
+* Discuss with the teacher
 * Use code to edit StoryJumper
 * Use white background (as a kind of style)
 * Go to the doctor
