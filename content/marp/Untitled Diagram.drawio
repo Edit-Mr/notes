@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2023-06-18T12:47:04.524Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="7_A_msNO-gzoOfTTvc8t" version="21.4.0" type="github">
+  <diagram name="Page-1" id="_vV8z-4bH4aNI5SvgFvr">
+    <mxGraphModel dx="-78" dy="275" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-2" value="通電" style="ellipse;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="442" y="255" width="73" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-3" value="初始化設定" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="424.25" y="324" width="108.5" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-4" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f-ifP4W6vxq-8xgNUm1K-2" target="f-ifP4W6vxq-8xgNUm1K-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="419" y="338" as="sourcePoint" />
+            <mxPoint x="469" y="288" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-6" value="開機動畫" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="424.25" y="406" width="108.5" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1" target="f-ifP4W6vxq-8xgNUm1K-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="478.38" y="359" as="sourcePoint" />
+            <mxPoint x="478.38" y="386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-8" value="箭頭動畫" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="424.25" y="488" width="108.5" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-9" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1" target="f-ifP4W6vxq-8xgNUm1K-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="478.38" y="441" as="sourcePoint" />
+            <mxPoint x="478.38" y="468" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f-ifP4W6vxq-8xgNUm1K-11" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="478.69" y="523" as="sourcePoint" />
+            <mxPoint x="478.31" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
